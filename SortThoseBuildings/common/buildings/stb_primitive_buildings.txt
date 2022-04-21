@@ -1,0 +1,229 @@
+#####################
+# Primitive buildings
+#####################
+
+building_primitive_dwellings = {
+	can_build = no
+	can_demolish = yes
+	can_be_ruined = no
+	position_priority = 71
+
+	potential = {
+		exists = owner
+		owner = {
+			is_primitive = yes
+			OR = {
+				has_country_flag = bronze_age
+				has_country_flag = iron_age
+				has_country_flag = late_medieval_age
+				has_country_flag = renaissance_age
+				has_country_flag = steam_age
+			}
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_primitive = no
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 6
+	}
+
+	upgrades = {
+	}
+}
+
+building_primitive_factory = {
+	can_build = no
+	can_demolish = yes
+	can_be_ruined = no
+	position_priority = 70
+
+	potential = {
+		exists = owner
+		owner = {
+			is_primitive = yes
+			OR = {
+				has_country_flag = steam_age
+				has_country_flag = machine_age
+				has_country_flag = industrial_age
+				has_country_flag = atomic_age
+				has_country_flag = early_space_age
+			}
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_primitive = no
+		}
+	}
+
+	planet_modifier = {
+		job_primitive_laborer_add = 2
+	}
+
+	upgrades = {
+	}
+}
+
+building_primitive_mine = {
+	can_build = no
+	can_demolish = yes
+	can_be_ruined = no
+	position_priority = 69
+
+	potential = {
+		exists = owner
+		owner = {
+			is_primitive = yes
+			OR = {
+				has_country_flag = steam_age
+				has_country_flag = machine_age
+				has_country_flag = industrial_age
+				has_country_flag = atomic_age
+				has_country_flag = early_space_age
+			}
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_primitive = no
+		}
+	}
+
+	planet_modifier = {
+		job_primitive_miner_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_lithoid_empire = yes }
+		}
+
+		job_primitive_miner_add = 8
+	}
+
+	upgrades = {
+	}
+}
+
+building_primitive_power_plant = {
+	can_build = no
+	can_demolish = yes
+	can_be_ruined = no
+	position_priority = 67
+
+	potential = {
+		exists = owner
+		owner = {
+			is_primitive = yes
+			OR = {
+				has_country_flag = steam_age
+				has_country_flag = machine_age
+				has_country_flag = industrial_age
+				has_country_flag = atomic_age
+				has_country_flag = early_space_age
+			}
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_primitive = no
+		}
+	}
+
+	planet_modifier = {
+		job_primitive_technician_add = 2
+	}
+
+	upgrades = {
+	}
+}
+
+building_primitive_farm = {
+	can_build = no
+	can_demolish = yes
+	can_be_ruined = no
+	position_priority = 68
+
+	potential = {
+		exists = owner
+		owner = {
+			is_primitive = yes
+			OR = {
+				has_country_flag = machine_age
+				has_country_flag = industrial_age
+				has_country_flag = atomic_age
+				has_country_flag = early_space_age
+			}
+			is_lithoid_empire = no
+		}
+	}
+
+	convert_to = {
+		building_primitive_mine
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			OR = {
+				is_primitive = no
+				is_lithoid_empire = yes
+			}
+		}
+	}
+
+	planet_modifier = {
+		job_primitive_farmer_add = 10
+	}
+
+	upgrades = {
+	}
+}
+
+building_urban_dwellings = {
+	can_build = no
+	can_demolish = yes
+	can_be_ruined = no
+	icon = building_residence
+	position_priority = 71
+
+	potential = {
+		exists = owner
+		owner = {
+			is_primitive = yes
+			OR = {
+				has_country_flag = machine_age
+				has_country_flag = industrial_age
+				has_country_flag = atomic_age
+				has_country_flag = early_space_age
+			}
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_primitive = no
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 24
+	}
+
+	upgrades = {
+	}
+}
