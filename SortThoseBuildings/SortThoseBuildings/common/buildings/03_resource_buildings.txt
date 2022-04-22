@@ -4,7 +4,7 @@
 
 building_hydroponics_farm = {
 	base_buildtime = @b1_time
-	position_priority = 46
+	position_priority = 47
 
 	category = resource
 
@@ -172,7 +172,7 @@ building_food_processing_facility = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = resource
-	position_priority = 22
+	position_priority = 23
 
 	potential = {
 		exists = owner
@@ -325,7 +325,7 @@ building_food_processing_center = {
 	base_buildtime = @b2_time
 	can_build = no
 	category = resource
-	position_priority = 22
+	position_priority = 23
 
 	allow = {
 		exists = owner
@@ -468,7 +468,7 @@ building_food_processing_center = {
 }
 
 building_mineral_purification_plant = {
-	position_priority = 24
+	position_priority = 25
 
 	desc = {
 		trigger = { NOT = { is_planet_class = pc_shattered_ring_habitable } }
@@ -670,7 +670,7 @@ building_mineral_purification_plant = {
 }
 
 building_mineral_purification_hub = {
-	position_priority = 24
+	position_priority = 25
 
 	desc = {
 		trigger = { NOT = { is_planet_class = pc_shattered_ring_habitable } }
@@ -878,7 +878,7 @@ building_energy_grid = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = resource
-	position_priority = 19
+	position_priority = 20
 
 	destroy_trigger = {
 		OR = {
@@ -1025,7 +1025,7 @@ building_energy_nexus = {
 	base_buildtime = @b2_time
 	can_build = no
 	category = resource
-	position_priority = 19
+	position_priority = 20
 
 	allow = {
 		has_upgraded_capital = yes
@@ -1154,7 +1154,7 @@ building_energy_nexus = {
 
 building_resource_silo = {
 	base_buildtime = 180
-	position_priority = 65
+	position_priority = 67
 
 	category = resource
 
@@ -1244,7 +1244,7 @@ building_resource_silo = {
 
 building_bio_reactor = {
 	base_buildtime = 240
-	position_priority = 47
+	position_priority = 48
 
 	category = resource
 

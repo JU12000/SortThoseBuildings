@@ -56,7 +56,7 @@ building_noble_estates = {
 building_slave_processing = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
-	position_priority = 31
+	position_priority = 32
 
 	category = government
 
@@ -110,7 +110,7 @@ building_slave_processing = {
 
 building_precinct_house = {
 	base_buildtime = @b1_time
-	position_priority = 50
+	position_priority = 52
 
 	category = government
 
@@ -182,7 +182,7 @@ building_precinct_house = {
 
 building_hall_judgment = {
 	base_buildtime = @b2_time
-	position_priority = 49
+	position_priority = 51
 
 	category = government
 	can_build = no
@@ -232,7 +232,7 @@ building_hall_judgment = {
 
 building_sentinel_posts = {
 	base_buildtime = @b1_time
-	position_priority = 49
+	position_priority = 51
 
 	category = government
 

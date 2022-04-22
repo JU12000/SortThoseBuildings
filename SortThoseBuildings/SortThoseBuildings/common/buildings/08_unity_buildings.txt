@@ -7,7 +7,7 @@ building_autochthon_monument = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = unity
-	position_priority = 33
+	position_priority = 34
 
 	potential = {
 		exists = owner
@@ -80,7 +80,7 @@ building_autochthon_monument = {
 building_heritage_site = {
 	base_buildtime = @b2_time
 	can_build = no
-	position_priority = 33
+	position_priority = 34
 
 	category = unity
 
@@ -157,7 +157,7 @@ building_heritage_site = {
 building_hypercomms_forum = {
 	base_buildtime = @b3_time
 	can_build = no
-	position_priority = 33
+	position_priority = 34
 
 	category = unity
 
@@ -233,7 +233,7 @@ building_hypercomms_forum = {
 
 building_bureaucratic_1 = {
 	base_buildtime = @b1_time
-	position_priority = 36
+	position_priority = 37
 
 	category = government
 
@@ -323,7 +323,7 @@ building_bureaucratic_1 = {
 building_bureaucratic_2 = {
 	base_buildtime = @b2_time
 	can_build = no
-	position_priority = 37
+	position_priority = 36
 
 	category = government
 
@@ -418,7 +418,7 @@ building_bureaucratic_2 = {
 building_bureaucratic_3 = {
 	base_buildtime = @b3_time
 	can_build = no
-	position_priority = 38
+	position_priority = 35
 
 	category = government
 
@@ -511,7 +511,7 @@ building_bureaucratic_3 = {
 ##################
 building_temple = {
 	base_buildtime = @b1_time
-	position_priority = 36
+	position_priority = 37
 
 	category = unity
 
@@ -602,7 +602,7 @@ building_temple = {
 building_holotemple = {
 	base_buildtime = @b2_time
 	can_build = no
-	position_priority = 37
+	position_priority = 36
 
 	category = unity
 
@@ -700,7 +700,7 @@ building_holotemple = {
 building_sacred_nexus = {
 	base_buildtime = @b3_time
 	can_build = no
-	position_priority = 38
+	position_priority = 35
 
 	category = unity
 
@@ -798,7 +798,7 @@ building_sacred_nexus = {
 building_uplink_node = {
 	base_buildtime = @b1_time
 	icon = building_autochthon_monument
-	position_priority = 36
+	position_priority = 37
 
 	category = government
 
@@ -867,7 +867,7 @@ building_network_junction = {
 	base_buildtime = @b2_time
 	can_build = no
 	icon = building_heritage_site
-	position_priority = 37
+	position_priority = 36
 
 	category = government
 
@@ -945,7 +945,7 @@ building_system_conflux = {
 	base_buildtime = @b3_time
 	can_build = no
 	icon = building_hypercomms_forum
-	position_priority = 38
+	position_priority = 35
 
 	category = government
 
@@ -1020,7 +1020,7 @@ building_system_conflux = {
 ##################
 building_hive_node = {
 	base_buildtime = @b1_time
-	position_priority = 36
+	position_priority = 37
 
 	exempt_from_ai_planet_specialization = no
 
@@ -1113,7 +1113,7 @@ building_hive_node = {
 building_hive_cluster = {
 	base_buildtime = @b2_time
 	can_build = no
-	position_priority = 37
+	position_priority = 36
 
 	exempt_from_ai_planet_specialization = no
 
@@ -1215,7 +1215,7 @@ building_hive_cluster = {
 building_hive_confluence = {
 	base_buildtime = @b3_time
 	can_build = no
-	position_priority = 38
+	position_priority = 35
 
 	category = unity
 
@@ -1313,7 +1313,7 @@ building_hive_confluence = {
 # Sacrificial Temple (basic)
 building_sacrificial_temple_1 = {
 	base_buildtime = @b1_time
-	position_priority = 36
+	position_priority = 37
 
 	category = unity
 
@@ -1379,7 +1379,7 @@ building_sacrificial_temple_1 = {
 building_sacrificial_temple_2 = {
 	base_buildtime = @b2_time
 	can_build = no
-	position_priority = 37
+	position_priority = 36
 
 	category = unity
 
@@ -1486,7 +1486,7 @@ building_sacrificial_temple_2 = {
 building_sacrificial_temple_3 = {
 	base_buildtime = @b3_time
 	can_build = no
-	position_priority = 38
+	position_priority = 35
 
 	category = unity
 
@@ -1587,7 +1587,7 @@ building_galactic_memorial_1 = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = unity
-	position_priority = 33
+	position_priority = 34
 
 	potential = {
 		exists = owner
@@ -1709,7 +1709,7 @@ building_galactic_memorial_2 = {
 	base_buildtime = @b2_time
 	can_build = no
 	category = unity
-	position_priority = 33
+	position_priority = 34
 
 	potential = {
 		exists = owner
@@ -1840,7 +1840,7 @@ building_galactic_memorial_3 = {
 	base_buildtime = @b3_time
 	can_build = no
 	category = unity
-	position_priority = 33
+	position_priority = 34
 
 	potential = {
 		exists = owner
@@ -1968,7 +1968,7 @@ building_simulation_1 = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	icon = building_holo_theatres
-	position_priority = 33
+	position_priority = 34
 
 	category = unity
 
@@ -2039,7 +2039,7 @@ building_simulation_2 = {
 	base_buildtime = @b2_time
 	can_build = no
 	icon = building_hyper_entertainment_forum
-	position_priority = 33
+	position_priority = 34
 
 	category = unity
 
@@ -2114,7 +2114,7 @@ building_simulation_3 = {
 	base_buildtime = @b3_time
 	can_build = no
 	icon = building_citadel_of_faith
-	position_priority = 33
+	position_priority = 34
 
 	category = unity
 
@@ -2188,7 +2188,7 @@ building_corporate_monument = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	icon = building_autochthon_monument
-	position_priority = 33
+	position_priority = 34
 
 	category = unity
 
@@ -2257,7 +2257,7 @@ building_corporate_site = {
 	base_buildtime = @b2_time
 	can_build = no
 	icon = building_heritage_site
-	position_priority = 33
+	position_priority = 34
 
 	category = unity
 
@@ -2327,7 +2327,7 @@ building_corporate_forum = {
 	base_buildtime = @b3_time
 	can_build = no
 	icon = building_hypercomms_forum
-	position_priority = 33
+	position_priority = 34
 
 	category = unity
 
@@ -2396,7 +2396,7 @@ building_sensorium_1 = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	icon = building_holo_theatres
-	position_priority = 33
+	position_priority = 34
 
 	category = unity
 
@@ -2467,7 +2467,7 @@ building_sensorium_2 = {
 	base_buildtime = @b2_time
 	can_build = no
 	icon = building_hyper_entertainment_forum
-	position_priority = 33
+	position_priority = 34
 
 	category = unity
 
@@ -2542,7 +2542,7 @@ building_sensorium_3 = {
 	base_buildtime = @b3_time
 	can_build = no
 	icon = building_citadel_of_faith
-	position_priority = 33
+	position_priority = 34
 
 	category = unity
 
@@ -2878,7 +2878,7 @@ building_alpha_hub = {
 # Servitors
 building_organic_sanctuary = {
 	base_buildtime = @b1_time
-	position_priority = 56
+	position_priority = 57
 
 	category = unity
 
@@ -3009,7 +3009,7 @@ building_organic_paradise = {
 	base_buildtime = @b2_time
 	can_build = no
 	icon = building_paradise_dome
-	position_priority = 55
+	position_priority = 56
 
 	potential = {
 		exists = owner

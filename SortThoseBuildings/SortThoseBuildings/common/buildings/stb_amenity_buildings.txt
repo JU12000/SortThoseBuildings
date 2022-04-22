@@ -3,7 +3,7 @@
 #############
 building_luxury_residence = {
 	base_buildtime = @b1_time
-	position_priority = 54
+	position_priority = 55
 
 	category = amenity
 
@@ -78,7 +78,7 @@ building_luxury_residence = {
 building_paradise_dome = {
 	base_buildtime = @b2_time
 	can_build = no
-	position_priority = 53
+	position_priority = 54
 
 	category = amenity
 
@@ -161,7 +161,7 @@ building_paradise_dome = {
 building_communal_housing = {
 	base_buildtime = @b1_time
 	icon = building_residence
-	position_priority = 54
+	position_priority = 55
 
 	category = amenity
 
@@ -247,7 +247,7 @@ building_communal_housing_large = {
 	base_buildtime = @b2_time
 	can_build = no
 	icon = building_paradise_dome
-	position_priority = 53
+	position_priority = 54
 
 	category = amenity
 
@@ -327,7 +327,7 @@ building_communal_housing_large = {
 #Machine housing
 building_drone_storage = {
 	base_buildtime = @b1_time
-	position_priority = 54
+	position_priority = 55
 
 	category = amenity
 
@@ -386,7 +386,7 @@ building_drone_storage = {
 building_drone_megastorage = {
 	base_buildtime = @b2_time
 	can_build = no
-	position_priority = 53
+	position_priority = 54
 
 	category = amenity
 
@@ -448,7 +448,7 @@ building_drone_megastorage = {
 #Hive housing
 building_hive_warren = {
 	base_buildtime = @b1_time
-	position_priority = 54
+	position_priority = 55
 
 	category = amenity
 
@@ -513,7 +513,7 @@ building_hive_warren = {
 building_expanded_warren = {
 	base_buildtime = @b2_time
 	can_build = no
-	position_priority = 53
+	position_priority = 54
 
 	category = amenity
 
@@ -577,7 +577,7 @@ building_expanded_warren = {
 
 building_holo_theatres = {
 	base_buildtime = @b1_time
-	position_priority = 45
+	position_priority = 46
 
 	category = amenity
 
@@ -684,7 +684,7 @@ building_holo_theatres = {
 building_hyper_entertainment_forum = {
 	base_buildtime = @b2_time
 	can_build = no
-	position_priority = 44
+	position_priority = 45
 
 	category = amenity
 
@@ -940,7 +940,7 @@ building_spawning_pool = {
 building_slave_huts = {
 	base_buildtime = 240
 	icon = building_crude_huts
-	position_priority = 53
+	position_priority = 54
 
 	category = amenity
 
@@ -978,7 +978,7 @@ building_slave_huts = {
 building_overseer_homes = {
 	base_buildtime = 240
 	icon = building_residence
-	position_priority = 50
+	position_priority = 51
 
 	category = amenity
 

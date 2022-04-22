@@ -138,7 +138,7 @@ building_dread_encampment = {
 
 building_stronghold = {
 	base_buildtime = 240
-	position_priority = 49
+	position_priority = 50
 
 	category = army
 
@@ -228,7 +228,7 @@ building_fortress = {
 	base_buildtime = @b1_time
 	can_build = no
 	planetary_ftl_inhibitor = yes
-	position_priority = 48
+	position_priority = 49
 
 	category = army
 

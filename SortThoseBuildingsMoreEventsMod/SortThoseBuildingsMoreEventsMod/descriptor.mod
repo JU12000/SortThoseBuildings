@@ -3,5 +3,5 @@ tags={
 	"Utilities"
 	"Fixes"
 }
-name="Sort Those Buildings"
+name="Sort Those Buildings - More Events Mod"
 supported_version="3.3.4"

@@ -3,7 +3,7 @@
 #############
 building_research_lab_1 = {
 	base_buildtime = @b1_time
-	position_priority = 42
+	position_priority = 43
 
 	exempt_from_ai_planet_specialization = no
 
@@ -101,7 +101,7 @@ building_research_lab_1 = {
 building_research_lab_2 = {
 	base_buildtime = @b2_time
 	can_build = no
-	position_priority = 41
+	position_priority = 42
 
 	category = research
 
@@ -195,7 +195,7 @@ building_research_lab_2 = {
 building_research_lab_3 = {
 	base_buildtime = @b3_time
 	can_build = no
-	position_priority = 40
+	position_priority = 41
 
 	category = research
 

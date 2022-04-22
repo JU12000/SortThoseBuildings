@@ -40,7 +40,7 @@ building_great_pyramid = {
 	can_demolish = yes
 	can_be_ruined = no
 	can_be_disabled = no
-	position_priority = 66
+	position_priority = 68
 
 	potential = {
 		NOT = { has_modifier = slave_colony }
@@ -62,7 +62,7 @@ building_artist_patron = {
 	base_buildtime = @b2_time
 	can_demolish = yes
 	base_cap_amount = 1
-	position_priority = 32
+	position_priority = 33
 
 	potential = {
 		custom_tooltip = {
@@ -180,7 +180,7 @@ building_waste_reprocessing_center = {
 	base_cap_amount = 1
 	can_build = yes
 	can_demolish = yes
-	position_priority = 37
+	position_priority = 38
 
 	potential = {
 		owner = { has_country_flag = bought_waste_reprocessing_center }
@@ -219,7 +219,7 @@ building_nuumismatic_shrine = {
 	base_buildtime = 180
 	can_demolish = yes
 	base_cap_amount = 1
-	position_priority = 37
+	position_priority = 38
 
 	potential = {
 		owner = { has_country_flag = nuumismatic_shrine }
@@ -256,7 +256,7 @@ building_nuumismatic_shrine = {
 building_crystal_plant_2 = {
 	base_buildtime = 800
 	can_build = no
-	position_priority = 63
+	position_priority = 65
 
 	category = manufacturing
 
