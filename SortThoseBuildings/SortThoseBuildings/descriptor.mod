@@ -3,5 +3,5 @@ tags={
 	"Utilities"
 	"Fixes"
 }
-name="Sort Those Buildings - Gigastructural Engineering & More"
+name="Sort Those Buildings"
 supported_version="3.3.4"
