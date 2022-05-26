@@ -21,10 +21,6 @@ building_research_lab_1 = {
 		}
 	}
 
-	allow = {
-		has_upgraded_capital = yes
-	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner

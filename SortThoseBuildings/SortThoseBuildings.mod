@@ -4,5 +4,5 @@ tags={
 	"Fixes"
 }
 name="Sort Those Buildings"
-supported_version="3.3.4"
+supported_version="3.4.3"
 path="mod/SortThoseBuildings"
