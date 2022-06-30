@@ -4,4 +4,4 @@ tags={
 	"Fixes"
 }
 name="Sort Those Buildings"
-supported_version="3.4.3"
+supported_version="3.4.5"

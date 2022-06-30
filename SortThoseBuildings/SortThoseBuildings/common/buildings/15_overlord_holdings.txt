@@ -76,25 +76,7 @@ holding_orbital_assembly_complex = {
 		}
 		upkeep = {
 			energy = @b1_upkeep
-			minerals = 10
-		}
-		produces = {
-			trigger = {
-				overlord_has_num_constructors_in_orbit = { NUM = 1 }
-			}
-			alloys = 3
-		}
-		produces = {
-			trigger = {
-				overlord_has_num_constructors_in_orbit = { NUM = 2 }
-			}
-			alloys = 6
-		}
-		produces = {
-			trigger = {
-				overlord_has_more_than_num_constructors_in_orbit = { NUM = 2 }
-			}
-			alloys = 9
+			alloys = 5
 		}
 	}
 
@@ -102,35 +84,8 @@ holding_orbital_assembly_complex = {
 		planet_building_build_speed_mult = 0.10
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			overlord_has_num_constructors_in_orbit = { NUM = 1 }
-		}
-		modifier = {
-			planet_building_build_speed_mult = 0.10
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			overlord_has_num_constructors_in_orbit = { NUM = 2 }
-		}
-		modifier = {
-			planet_building_build_speed_mult = 0.20
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			overlord_has_more_than_num_constructors_in_orbit = { NUM = 2 }
-		}
-		modifier = {
-			planet_building_build_speed_mult = 0.30
-		}
-	}
-
 	triggered_desc = {
-		text = holding_orbital_assembly_complex_constructors_desc
+		text = holding_orbital_assembly_complex_effect
 	}
 }
 
@@ -366,7 +321,7 @@ holding_energy_requisitorium = {
 	owner_type = subject_holding
 	icon = holding_energy_requisitorium
 	base_cap_amount = 1
-	15
+	position_priority = 15
 
 	potential = {
 		has_overlord_dlc = yes
@@ -845,7 +800,7 @@ holding_overlord_vigil_command = {
 	base_buildtime = @b2_time
 	owner_type = subject_holding
 	icon = holding_overlord_vigil_command
-	base_cap_amount = 1
+	empire_limit = 1
 	position_priority = 7
 
 	potential = {
@@ -953,7 +908,7 @@ holding_parasitic_algorithms = {
 	base_buildtime = @b2_time
 	owner_type = subject_holding
 	icon = holding_parasitic_algorithms
-	base_cap_amount = 1
+	empire_limit = 1
 	position_priority = 9
 
 	potential = {
@@ -995,52 +950,16 @@ holding_parasitic_algorithms = {
 		monthly_loyalty = -1
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			overlord_has_num_science_ships_in_orbit = { NUM = 1 }
-		}
-		modifier = {
-			monthly_loyalty = -0.5
+	on_built = {
+		planet = {
+			set_planet_flag = has_science_ministry
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			overlord_has_num_science_ships_in_orbit = { NUM = 2 }
+	on_destroy = {
+		planet = {
+			remove_planet_flag = has_science_ministry
 		}
-		modifier = {
-			monthly_loyalty = -1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			overlord_has_more_than_num_science_ships_in_orbit = { NUM = 2 }
-		}
-		modifier = {
-			monthly_loyalty = -1.5
-		}
-	}
-
-	triggered_country_modifier = {
-		potential = {
-			overlord_has_num_science_ships_in_orbit = { NUM = 1 }
-		}
-		all_technology_research_speed = 0.03
-	}
-
-	triggered_country_modifier = {
-		potential = {
-			overlord_has_num_science_ships_in_orbit = { NUM = 2 }
-		}
-		all_technology_research_speed = 0.06
-	}
-
-	triggered_country_modifier = {
-		potential = {
-			overlord_has_more_than_num_science_ships_in_orbit = { NUM = 2 }
-		}
-		all_technology_research_speed = 0.09
 	}
 
 	destroy_trigger = {
@@ -1185,7 +1104,7 @@ holding_communal_housing_outreach = {
 	owner_type = subject_holding
 	icon = building_residence
 	base_cap_amount = 1
-	position_priority = 24
+	position_priority = 25
 
 	resources = {
 		category = planet_holdings
@@ -1401,6 +1320,13 @@ holding_reemployment_center = {
 	triggered_desc = {
 		text = job_overlord_reassigner_effect_desc
 	}
+
+	triggered_desc = {
+		trigger = {
+			has_planet_flag = reemployment_center_timer
+		}
+		text = holding_reemployment_center_effect
+	}
 }
 
 holding_recruitment_office = {
@@ -1457,6 +1383,93 @@ holding_recruitment_office = {
 		planet = {
 			planet_event = { id = subject.5010 days = 1800 }
 		}
+	}
+}
+
+holding_park_ranger_lodge = {
+	base_buildtime = @b2_time
+	owner_type = subject_holding
+	icon = holding_park_ranger_lodge
+	base_cap_amount = 1
+	position_priority = 24
+
+	resources = {
+		category = planet_holdings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+
+	potential = {
+		owner.overlord = { has_valid_civic = civic_environmentalist }
+		NOT = {
+			owner = { has_valid_civic = civic_environmentalist }
+		}
+		NOR = {
+			is_planet_class = pc_city
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+			is_planet_class = pc_relic
+		}
+		is_artificial = no
+	}
+
+	destroy_trigger = {
+		OR = {
+			is_planet_class = pc_city
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+			is_planet_class = pc_relic
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			fail_text = no_free_district_for_ranger_lodge
+			planet = {
+				num_free_districts = {
+					type = any
+					value > 0
+				}
+			}
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet.owner
+			planet.owner = { is_gestalt = no }
+		}
+		job_overlord_ranger_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet.owner
+			planet.owner = { is_gestalt = yes }
+		}
+		job_overlord_ranger_drone_add = 1
+	}
+
+	on_built = {
+		planet = {
+			add_blocker = { type = d_nature_preserve_blocker }
+		}
+	}
+
+	on_destroy = {
+		planet = {
+			if = {
+				limit = { has_deposit = d_nature_preserve_blocker }
+				remove_deposit = d_nature_preserve_blocker
+			}
+		}
+	}
+
+	triggered_desc = {
+		text = job_overlord_ranger_effect_desc
 	}
 }
 
@@ -1573,7 +1586,7 @@ holding_organic_sanctuary = {
 	owner_type = subject_holding
 	icon = building_organic_sanctuary
 	base_cap_amount = 1
-	position_priority = 25
+	position_priority = 26
 
 	resources = {
 		category = planet_holdings
