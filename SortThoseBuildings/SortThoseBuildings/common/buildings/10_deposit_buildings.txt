@@ -12,7 +12,10 @@ building_mote_harvesters = {
 	category = resource
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = crucible_colony
+		}
 	}
 
 	triggered_planet_modifier = {
@@ -60,7 +63,10 @@ building_gas_extractors = {
 	category = resource
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = crucible_colony
+		}
 	}
 
 	triggered_planet_modifier = {
@@ -107,7 +113,10 @@ building_crystal_mines = {
 	category = resource
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = crucible_colony
+		}
 	}
 
 	triggered_planet_modifier = {
@@ -154,7 +163,10 @@ building_betharian_power_plant = {
 	category = resource
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = crucible_colony
+		}
 	}
 
 	resources = {

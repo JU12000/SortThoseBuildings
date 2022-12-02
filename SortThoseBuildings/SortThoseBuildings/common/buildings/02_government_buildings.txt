@@ -23,7 +23,20 @@ building_noble_estates = {
 
 	allow = {
 		has_upgraded_capital = yes
-		buildings_simple_allow = yes
+		if = {
+			limit = {
+				exists = orbital_defence
+			}
+			orbital_defence = {
+				exists = starbase
+				starbase = {
+					NOR = {
+						has_starbase_building = ring_noble_estates
+						is_starbase_building_building = ring_noble_estates
+					}
+				}
+			}
+		}
 	}
 
 	destroy_trigger = {
@@ -68,6 +81,20 @@ building_slave_processing = {
 
 	allow = {
 		has_upgraded_capital = yes
+		if = {
+			limit = {
+				exists = orbital_defence
+			}
+			orbital_defence = {
+				exists = starbase
+				starbase = {
+					NOR = {
+						has_starbase_building = ring_slave_processing_facility
+						is_starbase_building_building = ring_slave_processing_facility
+					}
+				}
+			}
+		}
 	}
 
 	destroy_trigger = { # destroys if true
@@ -194,10 +221,7 @@ building_hall_judgment = {
 
 	destroy_trigger = {
 		exists = owner
-		OR = {
-			buildings_no_motes = yes
-			NOT = { owner = { is_regular_empire = yes } }
-		}
+		owner = { is_regular_empire = no }
 	}
 
 	planet_modifier = {
@@ -229,7 +253,6 @@ building_hall_judgment = {
 	}
 }
 
-
 building_sentinel_posts = {
 	base_buildtime = @b1_time
 	position_priority = 51
@@ -246,7 +269,6 @@ building_sentinel_posts = {
 			OR = {
 				owner = { is_ai = no }
 				AND = {
-					buildings_simple_allow = yes
 					NOT = { has_building = building_sentinel_posts }
 				}
 			}
@@ -287,6 +309,133 @@ building_sentinel_posts = {
 	}
 }
 
+building_order_keep = {
+	base_buildtime = 180
+	position_priority =
+
+	can_demolish = no
+	can_be_disabled = no
+
+	empire_limit = {
+	 	base = 1
+	}
+
+	potential = {
+		owner = { has_origin = origin_toxic_knights }
+		has_planet_flag = toxic_knights_habitat
+		owner = { NOT = { has_country_flag = quest_abandoned } }
+	}
+
+	destroy_trigger = {
+		OR = {
+			NOT = { exists = owner }
+			NOT = { owner = { has_origin = origin_toxic_knights } }
+		}
+	}
+
+	planet_modifier = {
+		job_squire_add = 1
+		job_knight_add = 1
+		job_knight_per_pop = 0.05 # 1 for every 10 pop while quest active. 1 for 20 after quest.
+
+		planet_immigration_pull_add = 5
+		planet_resettlement_unemployed_destination_mult = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_country_flag = toxoids_7060_A }
+		}
+		modifier = { job_knight_add = 1 }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { NOT = { has_country_flag = quest_over } }
+		}
+		modifier = {
+			job_knight_add = 1
+			job_knight_per_pop = 0.05
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_country_flag = toxoids_7090_a }
+		}
+		planet_stability_add = 15
+	}
+
+
+	resources = {
+		cost = {
+			minerals = 1000
+		}
+		category = planet_buildings
+	}
+
+	triggered_desc = {
+		text = building_order_keep_effect
+	}
+
+	triggered_desc = {
+		text = job_knight_effect_desc
+	}
+
+	triggered_desc = {
+		text = job_squire_effect_desc
+	}
+}
+
+building_order_castle = {
+	icon = building_order_holding
+	base_buildtime = 180
+	can_demolish = no
+	can_be_disabled = no
+	can_build = no
+	position_priority =
+
+	destroy_trigger = {
+		OR = {
+			NOT = { exists = owner }
+			NOT = { owner = { has_origin = origin_toxic_knights } }
+		}
+	}
+
+	planet_modifier = {
+		job_squire_add = 1
+		job_knight_add = 1
+
+		planet_immigration_pull_add = 1
+		planet_resettlement_unemployed_destination_mult = 0.2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { NOT = { has_country_flag = quest_over } }
+		}
+		modifier = {
+			job_knight_add = 1
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+	}
+
+	triggered_desc = {
+		text = building_order_keep_effect
+	}
+
+	triggered_desc = {
+		text = job_knight_effect_desc
+	}
+
+	triggered_desc = {
+		text = job_squire_effect_desc
+	}
+}
+
 #############
 # Ascension perks
 #############
@@ -302,30 +451,33 @@ building_psi_corps = {
 
 	potential = {
 		host_has_dlc = "Utopia"
-		owner = {
-			OR = {
-				has_ascension_perk = ap_mind_over_matter
-				has_origin = origin_shroudwalker_apprentice
-			}
-		}
+		owner = { has_tradition = tr_psionics_psi_corps }
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
 	}
 
 	allow = {
 		has_major_upgraded_capital = yes
-		buildings_simple_allow = yes
+		if = {
+			limit = {
+				exists = orbital_defence
+			}
+			orbital_defence = {
+				exists = starbase
+				starbase = {
+					NOR = {
+						has_starbase_building = ring_psi_corps
+						is_starbase_building_building = ring_psi_corps
+					}
+				}
+			}
+		}
 	}
 
 	destroy_trigger = {
 		exists = owner
 		NOT = {
-			owner = {
-				OR = {
-					has_ascension_perk = ap_mind_over_matter
-					has_origin = origin_shroudwalker_apprentice
-				}
-			}
+			owner = { has_tradition = tr_psionics_psi_corps }
 		}
 	}
 
@@ -373,7 +525,20 @@ building_embassy = {
 
 	allow = {
 		has_upgraded_capital = yes
-		buildings_simple_allow = yes
+		if = {
+			limit = {
+				exists = orbital_defence
+			}
+			orbital_defence = {
+				exists = starbase
+				starbase = {
+					NOR = {
+						has_starbase_building = ring_embassy_complex
+						is_starbase_building_building = ring_embassy_complex
+					}
+				}
+			}
+		}
 	}
 
 	destroy_trigger = {
@@ -383,7 +548,6 @@ building_embassy = {
 				owner = { is_regular_empire = no }
 			}
 			planet = { is_capital = no }
-			buildings_no_crystals = yes
 		}
 	}
 
@@ -430,6 +594,20 @@ building_grand_embassy = {
 
 	allow = {
 		has_major_upgraded_capital = yes
+		if = {
+			limit = {
+				exists = orbital_defence
+			}
+			orbital_defence = {
+				exists = starbase
+				starbase = {
+					NOR = {
+						has_starbase_building = ring_embassy_complex
+						is_starbase_building_building = ring_embassy_complex
+					}
+				}
+			}
+		}
 	}
 
 	destroy_trigger = {
@@ -439,7 +617,6 @@ building_grand_embassy = {
 				owner = { is_regular_empire = no }
 			}
 			planet = { is_capital = no }
-			buildings_no_crystals = yes
 		}
 	}
 

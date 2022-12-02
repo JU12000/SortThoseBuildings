@@ -2,6 +2,38 @@
 # Primitive buildings
 #####################
 
+building_crude_huts = {
+	capital = yes
+	can_build = no
+	can_demolish = yes
+	can_be_ruined = no
+	position_priority = 0
+
+	potential = {
+		exists = owner
+		owner = {
+			is_primitive = yes
+			has_country_flag = stone_age
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_primitive = no
+		}
+	}
+
+	planet_modifier = {
+		planet_amenities_add = 5
+		planet_housing_add = 4
+		planet_crime_add = -10
+	}
+
+	upgrades = {
+	}
+}
+
 building_primitive_dwellings = {
 	can_build = no
 	can_demolish = yes
@@ -31,6 +63,56 @@ building_primitive_dwellings = {
 
 	planet_modifier = {
 		planet_housing_add = 6
+	}
+
+	upgrades = {
+	}
+}
+
+building_stone_palace = {
+	capital = yes
+	can_build = no
+	can_demolish = yes
+	can_be_ruined = no
+	position_priority = 0
+
+	potential = {
+		exists = owner
+		owner = {
+			is_primitive = yes
+			OR = {
+				has_country_flag = bronze_age
+				has_country_flag = iron_age
+				has_country_flag = late_medieval_age
+				has_country_flag = renaissance_age
+				has_country_flag = steam_age
+			}
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_primitive = no
+		}
+	}
+
+	convert_to = {
+		building_hive_capital
+		building_machine_capital
+		building_colony_shelter
+		building_hab_capital
+		building_hab_fe_capital
+	}
+
+	planet_modifier = {
+		job_primitive_noble_add = 1
+		job_primitive_warrior_add = 1
+		job_primitive_researcher_add = 1
+		job_primitive_priest_add = 1
+		planet_housing_add = 3
+		planet_amenities_add = 25
+		planet_crime_add = -10
 	}
 
 	upgrades = {
@@ -187,6 +269,55 @@ building_primitive_farm = {
 
 	planet_modifier = {
 		job_primitive_farmer_add = 10
+	}
+
+	upgrades = {
+	}
+}
+
+building_primitive_capital = {
+	capital = yes
+	can_build = no
+	can_demolish = yes
+	can_be_ruined = no
+	position_priority = 0
+
+	potential = {
+		exists = owner
+		owner = {
+			is_primitive = yes
+			OR = {
+				has_country_flag = machine_age
+				has_country_flag = industrial_age
+				has_country_flag = atomic_age
+				has_country_flag = early_space_age
+			}
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_primitive = no
+		}
+	}
+
+	convert_to = {
+		building_machine_capital
+		building_capital
+		building_hive_capital
+		building_hab_capital
+		building_hab_fe_capital
+	}
+
+	planet_modifier = {
+		job_primitive_bureaucrat_add = 2
+		job_primitive_warrior_2_add = 2
+		job_primitive_researcher_2_add = 2
+		job_primitive_priest_2_add = 2
+		planet_housing_add = 5
+		planet_amenities_add = 25
+		planet_crime_add = -20
 	}
 
 	upgrades = {

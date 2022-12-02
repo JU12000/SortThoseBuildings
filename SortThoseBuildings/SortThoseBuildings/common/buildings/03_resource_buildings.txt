@@ -21,7 +21,6 @@ building_hydroponics_farm = {
 	}
 
 	allow = {
-		buildings_simple_allow = yes
 	}
 
 	destroy_trigger = {
@@ -179,6 +178,7 @@ building_food_processing_facility = {
 		NOR = {
 			is_planet_class = pc_machine
 			has_modifier = resort_colony
+			has_modifier = crucible_colony
 		}
 
 		OR = {
@@ -198,6 +198,7 @@ building_food_processing_facility = {
 			}
 			is_planet_class = pc_machine
 			has_modifier = resort_colony
+			has_modifier = crucible_colony
 			AND = {
 				owner = {
 					is_ai = yes
@@ -351,12 +352,21 @@ building_food_processing_center = {
 			}
 			is_planet_class = pc_machine
 			has_modifier = resort_colony
-			buildings_no_motes = yes
+			has_modifier = crucible_colony
 		}
 	}
 
 	planet_modifier = {
 		planet_farmers_food_produces_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			is_ringworld = yes
+		}
+		modifier = {
+			planet_farmers_food_produces_add = 2
+		}
 	}
 
 	triggered_planet_modifier = {
@@ -417,12 +427,32 @@ building_food_processing_center = {
 	resources = {
 		category = planet_buildings
 		cost = {
+			trigger = {
+				is_ringworld = no
+			}
 			minerals = @b2_minerals
 			volatile_motes = @b2_rare_cost
 		}
+		cost = {
+			trigger = {
+				is_ringworld = yes
+			}
+			minerals = 900
+			volatile_motes = 200
+		}
 		upkeep = {
+			trigger = {
+				is_ringworld = no
+			}
 			energy = 2
 			volatile_motes = @b2_rare_upkeep
+		}
+		upkeep = {
+			trigger = {
+				is_ringworld = yes
+			}
+			energy = 5
+			volatile_motes = 3
 		}
 	}
 
@@ -487,6 +517,7 @@ building_mineral_purification_plant = {
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
+			has_modifier = crucible_colony
 			AND = {
 				exists = owner
 				owner = {
@@ -498,7 +529,10 @@ building_mineral_purification_plant = {
 	}
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = crucible_colony
+		}
 
 		NOR = { # Ringworlds don't have mines
 			is_planet_class = pc_ringworld_habitable
@@ -689,16 +723,16 @@ building_mineral_purification_hub = {
 
 	allow = {
 		has_upgraded_capital = yes
-		NOT = { has_modifier = resort_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = crucible_colony
+		}
 	}
 
 	destroy_trigger = {
 		OR = {
-			OR = {
 				has_modifier = resort_colony
-				buildings_no_motes = yes
-			}
-
+			has_modifier = crucible_colony
 			AND = {
 				exists = owner
 				owner = {
@@ -726,6 +760,15 @@ building_mineral_purification_hub = {
 		modifier = {
 			planet_miners_minerals_produces_add = 1
 			planet_miners_alloys_produces_add = 0.5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			is_ringworld = yes
+		}
+		modifier = {
+			planet_miners_minerals_produces_add = 2
 		}
 	}
 
@@ -808,6 +851,9 @@ building_mineral_purification_hub = {
 	resources = {
 		category = planet_buildings
 		cost = {
+			trigger = {
+				is_ringworld = no
+			}
 			minerals = @b2_minerals
 			volatile_motes = @b2_rare_cost
 		}
@@ -820,9 +866,26 @@ building_mineral_purification_hub = {
 			minerals = 300
 			alloys = 150
 		}
+		cost = {
+			trigger = {
+				is_ringworld = yes
+			}
+			minerals = 900
+			volatile_motes = 200
+		}
 		upkeep = {
+			trigger = {
+				is_ringworld = no
+			}
 			energy = 2
 			volatile_motes = @b2_rare_upkeep
+		}
+		upkeep = {
+			trigger = {
+				is_ringworld = yes
+			}
+			energy = 5
+			volatile_motes = 3
 		}
 	}
 
@@ -886,8 +949,8 @@ building_energy_grid = {
 		OR = {
 			OR = {
 				has_modifier = resort_colony
+				has_modifier = crucible_colony
 			}
-
 			AND = {
 				exists = owner
 				owner = {
@@ -899,7 +962,10 @@ building_energy_grid = {
 	}
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = crucible_colony
+		}
 		OR = {
 			NOT = { is_planet_class = pc_habitat }
 			AND = {
@@ -1036,10 +1102,8 @@ building_energy_nexus = {
 
 	destroy_trigger = {
 		OR = {
-			OR = {
 				has_modifier = resort_colony
-				buildings_no_exotic_gases = yes
-			}
+			has_modifier = crucible_colony
 			AND = {
 				exists = owner
 				owner = {
@@ -1052,6 +1116,15 @@ building_energy_nexus = {
 
 	planet_modifier = {
 		planet_technician_energy_produces_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			is_ringworld = yes
+		}
+		modifier = {
+			planet_technician_energy_produces_add = 2
+		}
 	}
 
 	triggered_planet_modifier = {
@@ -1108,21 +1181,32 @@ building_energy_nexus = {
 	resources = {
 		category = planet_buildings
 		cost = {
+			trigger = {
+				is_ringworld = no
+			}
 			minerals = @b2_minerals
 			exotic_gases = @b2_rare_cost
 		}
 		cost = {
 			trigger = {
-				owner = {
-					is_robot_empire = yes
+				is_ringworld = yes
 				}
-			}
-			minerals = 300
-			alloys = 150
+			minerals = 900
+			exotic_gases = 200
 		}
 		upkeep = {
+			trigger = {
+				is_ringworld = no
+			}
 			energy = 2
 			exotic_gases = @b2_rare_upkeep
+		}
+		upkeep = {
+			trigger = {
+				is_ringworld = yes
+			}
+			energy = 5
+			exotic_gases = 3
 		}
 	}
 
@@ -1166,6 +1250,7 @@ building_resource_silo = {
 		NOR = {
 			has_modifier = resort_colony
 			has_modifier = slave_colony
+			has_modifier = crucible_colony
 		}
 	}
 
