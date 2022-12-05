@@ -5,7 +5,7 @@ building_noble_estates = {
 	base_buildtime = @b2_time
 	icon = building_palace
 	base_cap_amount = 1
-	position_priority = 4
+	position_priority = 221
 
 	category = government
 
@@ -69,7 +69,7 @@ building_noble_estates = {
 building_slave_processing = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
-	position_priority = 32
+	position_priority = 221
 
 	category = government
 
@@ -137,7 +137,7 @@ building_slave_processing = {
 
 building_precinct_house = {
 	base_buildtime = @b1_time
-	position_priority = 52
+	position_priority = 650
 
 	category = government
 
@@ -209,7 +209,6 @@ building_precinct_house = {
 
 building_hall_judgment = {
 	base_buildtime = @b2_time
-	position_priority = 51
 
 	category = government
 	can_build = no
@@ -255,7 +254,7 @@ building_hall_judgment = {
 
 building_sentinel_posts = {
 	base_buildtime = @b1_time
-	position_priority = 51
+	position_priority = 650
 
 	category = government
 
@@ -311,7 +310,7 @@ building_sentinel_posts = {
 
 building_order_keep = {
 	base_buildtime = 180
-	position_priority =
+	position_priority = 32
 
 	can_demolish = no
 	can_be_disabled = no
@@ -393,7 +392,7 @@ building_order_castle = {
 	can_demolish = no
 	can_be_disabled = no
 	can_build = no
-	position_priority =
+	position_priority = 228
 
 	destroy_trigger = {
 		OR = {
@@ -443,7 +442,7 @@ building_order_castle = {
 #Psionic path
 building_psi_corps = {
 	base_buildtime = @b2_time
-	position_priority = 11
+	position_priority = 277
 
 	category = government
 
@@ -503,7 +502,7 @@ building_psi_corps = {
 
 building_embassy = {
 	base_buildtime = @b2_time
-	position_priority = 1
+	position_priority = 48
 
 	category = government
 
@@ -579,7 +578,6 @@ building_embassy = {
 building_grand_embassy = {
 	base_buildtime = @b3_time
 	can_build = no
-	position_priority = 1
 
 	category = government
 
@@ -650,8 +648,8 @@ building_gaiaseeders_1 = {
 	base_cap_amount = 1
 	category = government
 	can_be_disabled = no
-	position_priority = 3
 	upgrades = { "building_gaiaseeders_2" }
+	position_priority = 214
 
 	potential = {
 		exists = owner
@@ -714,7 +712,6 @@ building_gaiaseeders_2 = {
 	can_build = no
 	category = government
 	can_be_disabled = no
-	position_priority = 3
 	upgrades = { "building_gaiaseeders_3" }
 
 	resources = {
@@ -761,7 +758,6 @@ building_gaiaseeders_3 = {
 	can_build = no
 	category = government
 	can_be_disabled = no
-	position_priority = 3
 	upgrades = { "building_gaiaseeders_4" }
 
 	resources = {
@@ -807,7 +803,6 @@ building_gaiaseeders_4 = {
 	can_build = no
 	category = government
 	can_be_disabled = no
-	position_priority = 3
 
 	destroy_trigger = {
 		OR = {

@@ -5,7 +5,7 @@
 building_mote_harvesters = {
 	base_buildtime = @b1_time
 	icon = building_mote_harvesting_traps
-	position_priority = 59
+	position_priority = 1024
 
 	is_capped_by_modifier = yes
 
@@ -56,7 +56,7 @@ building_mote_harvesters = {
 building_gas_extractors = {
 	base_buildtime = @b1_time
 	icon = building_gas_extractors
-	position_priority = 61
+	position_priority = 1036
 
 	is_capped_by_modifier = yes
 
@@ -106,7 +106,7 @@ building_gas_extractors = {
 
 building_crystal_mines = {
 	base_buildtime = @b1_time
-	position_priority = 64
+	position_priority = 1048
 
 	is_capped_by_modifier = yes
 
@@ -156,7 +156,7 @@ building_crystal_mines = {
 
 building_betharian_power_plant = {
 	base_buildtime = @b1_time
-	position_priority = 21
+	position_priority = 722
 
 	is_capped_by_modifier = yes
 
@@ -221,7 +221,7 @@ building_betharian_power_plant = {
 
 building_xeno_zoo = {
 	base_buildtime = @b1_time
-	position_priority = 44
+	position_priority = 1180
 
 	is_capped_by_modifier = yes
 

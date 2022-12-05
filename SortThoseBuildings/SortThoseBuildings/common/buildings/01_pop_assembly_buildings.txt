@@ -5,7 +5,7 @@
 building_robot_assembly_plant = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
-	position_priority = 7
+	position_priority = 120
 
 	category = pop_assembly
 
@@ -143,7 +143,6 @@ building_robot_assembly_complex = {
 	icon = building_machine_assembly_complex
 	base_buildtime = @b3_time
 	can_build = no
-	position_priority =
 
 	category = pop_assembly
 
@@ -269,7 +268,7 @@ building_machine_assembly_plant = {
 	icon = building_robot_assembly_plant
 	base_buildtime = @b1_time
 	base_cap_amount = 1
-	position_priority = 7
+	position_priority = 120
 
 	category = pop_assembly
 
@@ -341,7 +340,6 @@ building_machine_assembly_plant = {
 building_machine_assembly_complex = {
 	base_buildtime = @b3_time
 	can_build = no
-	position_priority = 7
 
 	category = pop_assembly
 
@@ -403,7 +401,7 @@ building_machine_assembly_complex = {
 building_spawning_pool = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
-	position_priority = 7
+	position_priority = 120
 
 	category = pop_assembly
 
@@ -499,7 +497,7 @@ building_spawning_pool = {
 building_offspring_nest = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
-	position_priority = 7
+	position_priority = 120
 
 	category = pop_assembly
 
@@ -581,7 +579,7 @@ building_necrophage_elevation_chamber = {
 	icon = building_chamber_of_elevation_1
 	base_buildtime = @b1_time
 	base_cap_amount = 1
-	position_priority = 16
+	position_priority = 256
 	skip_automation_upgrading = yes #colony automation will not try to upgrade this
 
 	desc = {
@@ -752,7 +750,6 @@ building_necrophage_house_of_apotheosis = {
 	icon = building_chamber_of_elevation_2
 	base_buildtime = @b3_time
 	can_build = no
-	position_priority = 15
 
 	category = pop_assembly
 
@@ -810,14 +807,14 @@ building_necrophage_house_of_apotheosis = {
 			}
 			AND = {
 				owner = { is_ai = yes }
-					NOT = {
-						any_owned_species = {
-							species_can_be_necrophaged = yes
-						}
+				NOT = {
+					any_owned_species = {
+						species_can_be_necrophaged = yes
 					}
 				}
 			}
 		}
+	}
 
 	planet_modifier = {
 		job_necro_apprentice_add = 6
@@ -907,7 +904,7 @@ building_necrophage_house_of_apotheosis = {
 
 building_clone_vats = {
 	base_buildtime = @b1_time
-	position_priority = 6
+	position_priority = 160
 
 	category = pop_assembly
 
@@ -1022,7 +1019,7 @@ building_clone_vats = {
 building_clone_army_clone_vat = {
 	icon = building_ancient_relics
 	base_buildtime = 90
-	position_priority = 6
+	position_priority = 140
 
 	empire_limit = {
 		base = 5
@@ -1154,7 +1151,7 @@ building_clone_army_clone_vat = {
 building_posthumous_employment_center = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
-	position_priority = 8
+	position_priority = 180
 
 	category = pop_assembly
 
@@ -1236,7 +1233,7 @@ building_toxic_bath_hive = {
 	base_cap_amount = 1
 	category = amenity
 	icon = building_toxic_bath_hive
-	position_priority =
+	position_priority = 263
 
 	potential = {
 		owner = {
@@ -1284,6 +1281,7 @@ building_toxic_bath_machine = {
 	base_cap_amount = 1
 	category = amenity
 	icon = building_toxic_bath_machine
+	position_priority = 263
 
 	potential = {
 		owner = {

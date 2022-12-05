@@ -4,7 +4,7 @@
 
 building_hydroponics_farm = {
 	base_buildtime = @b1_time
-	position_priority = 47
+	position_priority = 766
 
 	category = resource
 
@@ -171,7 +171,7 @@ building_food_processing_facility = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = resource
-	position_priority = 23
+	position_priority = 430
 
 	potential = {
 		exists = owner
@@ -326,7 +326,6 @@ building_food_processing_center = {
 	base_buildtime = @b2_time
 	can_build = no
 	category = resource
-	position_priority = 23
 
 	allow = {
 		exists = owner
@@ -498,7 +497,7 @@ building_food_processing_center = {
 }
 
 building_mineral_purification_plant = {
-	position_priority = 25
+	position_priority = 420
 
 	desc = {
 		trigger = { NOT = { is_planet_class = pc_shattered_ring_habitable } }
@@ -705,7 +704,6 @@ building_mineral_purification_plant = {
 }
 
 building_mineral_purification_hub = {
-	position_priority = 25
 
 	desc = {
 		trigger = { NOT = { is_planet_class = pc_shattered_ring_habitable } }
@@ -731,7 +729,7 @@ building_mineral_purification_hub = {
 
 	destroy_trigger = {
 		OR = {
-				has_modifier = resort_colony
+			has_modifier = resort_colony
 			has_modifier = crucible_colony
 			AND = {
 				exists = owner
@@ -943,7 +941,7 @@ building_energy_grid = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = resource
-	position_priority = 20
+	position_priority = 410
 
 	destroy_trigger = {
 		OR = {
@@ -1094,7 +1092,6 @@ building_energy_nexus = {
 	base_buildtime = @b2_time
 	can_build = no
 	category = resource
-	position_priority = 20
 
 	allow = {
 		has_upgraded_capital = yes
@@ -1102,7 +1099,7 @@ building_energy_nexus = {
 
 	destroy_trigger = {
 		OR = {
-				has_modifier = resort_colony
+			has_modifier = resort_colony
 			has_modifier = crucible_colony
 			AND = {
 				exists = owner
@@ -1190,7 +1187,7 @@ building_energy_nexus = {
 		cost = {
 			trigger = {
 				is_ringworld = yes
-				}
+			}
 			minerals = 900
 			exotic_gases = 200
 		}
@@ -1242,7 +1239,7 @@ building_energy_nexus = {
 
 building_resource_silo = {
 	base_buildtime = 180
-	position_priority = 67
+	position_priority = 1140
 
 	category = resource
 
@@ -1343,7 +1340,7 @@ building_resource_silo = {
 
 building_bio_reactor = {
 	base_buildtime = 240
-	position_priority = 48
+	position_priority = 733
 
 	category = resource
 

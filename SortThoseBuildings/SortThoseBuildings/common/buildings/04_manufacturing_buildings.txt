@@ -5,7 +5,7 @@ building_foundry_1 = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = manufacturing
-	position_priority = 27
+	position_priority = 450
 
 	potential = {
 		NOR = {
@@ -179,7 +179,6 @@ building_foundry_2 = {
 	base_buildtime = @b2_time
 	can_build = no
 	category = manufacturing
-	position_priority = 27
 
 	allow = {
 		has_upgraded_capital = yes
@@ -364,7 +363,6 @@ building_foundry_3 = {
 	base_buildtime = @b3_time
 	can_build = no
 	category = manufacturing
-	position_priority = 27
 
 	allow = {
 		has_major_upgraded_capital = yes
@@ -591,7 +589,7 @@ building_factory_1 = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = manufacturing
-	position_priority = 29
+	position_priority = 440
 
 	potential = {
 		exists = owner
@@ -723,7 +721,6 @@ building_factory_2 = {
 	base_buildtime = @b2_time
 	can_build = no
 	category = manufacturing
-	position_priority = 29
 
 	allow = {
 		has_upgraded_capital = yes
@@ -856,7 +853,6 @@ building_factory_2 = {
 building_factory_3 = {
 	base_buildtime = @b3_time
 	can_build = no
-	position_priority = 29
 
 	category = manufacturing
 
@@ -1018,7 +1014,7 @@ building_factory_3 = {
 
 building_refinery = {
 	base_buildtime = @b2_time
-	position_priority = 62
+	position_priority = 1072
 
 	exempt_from_ai_planet_specialization = no
 	category = manufacturing
@@ -1084,7 +1080,7 @@ building_refinery = {
 
 building_chemical_plant = {
 	base_buildtime = @b2_time
-	position_priority = 60
+	position_priority = 1060
 
 	exempt_from_ai_planet_specialization = no
 	category = manufacturing
@@ -1150,7 +1146,7 @@ building_chemical_plant = {
 
 building_crystal_plant = {
 	base_buildtime = @b2_time
-	position_priority = 66
+	position_priority = 1084
 
 	exempt_from_ai_planet_specialization = no
 	category = manufacturing
@@ -1220,7 +1216,7 @@ building_crystal_plant = {
 
 building_nanite_transmuter = {
 	base_buildtime = @b3_time
-	position_priority = 58
+	position_priority = 1012
 
 	category = manufacturing
 
@@ -1293,7 +1289,7 @@ building_ministry_production = {
 	base_buildtime = @b2_time
 	base_cap_amount = 1
 	icon = building_production_center
-	position_priority = 30
+	position_priority = 480
 
 	category = manufacturing
 
@@ -1380,7 +1376,7 @@ building_ministry_production = {
 building_production_center = {
 	base_buildtime = @b2_time
 	base_cap_amount = 1
-	position_priority = 30
+	position_priority = 480
 
 	category = manufacturing
 
@@ -1538,7 +1534,7 @@ building_production_center = {
 building_coordinated_fulfillment_center_1 = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
-	position_priority =
+	position_priority = 490
 
 	category = manufacturing
 
@@ -1699,7 +1695,6 @@ building_coordinated_fulfillment_center_1 = {
 building_coordinated_fulfillment_center_2 = {
 	base_buildtime = @b2_time
 	can_build = no
-	position_priority =
 
 	category = manufacturing
 
