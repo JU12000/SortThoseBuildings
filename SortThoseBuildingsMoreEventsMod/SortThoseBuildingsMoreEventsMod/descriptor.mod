@@ -4,4 +4,4 @@ tags={
 	"Fixes"
 }
 name="Sort Those Buildings - More Events Mod"
-supported_version="3.6.0"
+supported_version="3.6.1"

@@ -1,9 +1,9 @@
-version="1.1.0"
+version="1.1.1"
 tags={
 	"Utilities"
 	"Fixes"
 }
 name="Sort Those Buildings"
-supported_version="3.6.0"
+supported_version="3.6.1"
 path="mod/SortThoseBuildings"
 remote_file_id="2798297351"
