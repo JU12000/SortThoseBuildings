@@ -51,7 +51,7 @@ building_mem_colony_ship_protocity = {
 	can_be_ruined = no
     capital = yes
     icon = building_residence
-		position_priority = 74
+		position_priority = 1384
 
     potential = {
         exists = owner
@@ -93,7 +93,7 @@ building_mem_colony_ship_farming_outpost = {
 	can_demolish = yes
     can_be_ruined = no
     icon = building_primitive_dwellings
-		position_priority = 71
+		position_priority = 1356
 
     potential = {
         exists = owner
@@ -127,7 +127,7 @@ building_mem_colony_ship_industrial_outpost = {
 	can_demolish = yes
     can_be_ruined = no
     icon = building_primitive_factory
-		position_priority = 73
+		position_priority = 1370
 
     potential = {
         exists = owner
@@ -161,7 +161,7 @@ building_mem_colony_ship_power_outpost = {
 	can_demolish = yes
     can_be_ruined = no
     icon = building_primitive_power_plant
-		position_priority = 70
+		position_priority = 1328
 
     potential = {
         exists = owner
@@ -192,7 +192,7 @@ building_mem_colony_ship_mining_outpost = {
 	can_demolish = yes
     can_be_ruined = no
     icon = building_primitive_mine
-		position_priority = 72
+		position_priority = 1342
 
     potential = {
         exists = owner

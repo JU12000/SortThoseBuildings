@@ -329,6 +329,7 @@ building_urban_dwellings = {
 	can_demolish = yes
 	can_be_ruined = no
 	icon = building_residence
+	position_priority = 1384
 
 	potential = {
 		exists = owner

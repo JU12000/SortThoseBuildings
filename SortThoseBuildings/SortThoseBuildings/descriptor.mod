@@ -1,7 +1,7 @@
-version="1.0.0"
+version="1.1.0"
 tags={
 	"Utilities"
 	"Fixes"
 }
 name="Sort Those Buildings"
-supported_version="3.4.5"
+supported_version="3.6.0"

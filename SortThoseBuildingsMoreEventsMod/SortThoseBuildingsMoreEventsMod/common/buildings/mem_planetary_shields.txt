@@ -7,7 +7,7 @@ building_planetary_shield_generator = {
 	base_cap_amount = 1
 	position_priority = 100
 	can_build = no
-	position_priority = 9
+	position_priority = 242
 
 	category = army
 
@@ -48,7 +48,7 @@ building_mem_planetary_shield_generator = {
 	icon = "building_planetary_shield_generator"
 	base_buildtime = 600
 	base_cap_amount = 1
-	position_priority = 9
+	position_priority = 242
 
 	category = army
 
@@ -150,7 +150,6 @@ building_mem_planetary_shield_generator_heavy = {
 	base_buildtime = 600
 	can_build = no
 	planetary_ftl_inhibitor = yes
-	position_priority = 9
 
 	category = army
 
@@ -230,7 +229,7 @@ building_mem_planetary_shield_generator_orila = {
 	can_build = no
 	can_demolish = yes
 	planetary_ftl_inhibitor = yes
-	position_priority = 9
+	position_priority = 242
 
 	category = army
 
