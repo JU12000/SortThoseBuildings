@@ -5,6 +5,8 @@ holding_garrison = {
 	base_cap_amount = 1
 	position_priority = 18
 
+	category = army
+
 	resources = {
 		category = planet_holdings
 		cost = {
@@ -65,6 +67,8 @@ holding_orbital_assembly_complex = {
 	base_cap_amount = 1
 	position_priority = 81
 
+	category = manufacturing
+
 	potential = {
 		has_overlord_dlc = yes
 	}
@@ -95,6 +99,8 @@ holding_propaganda_office = {
 	icon = holding_propaganda_office
 	base_cap_amount = 1
 	position_priority = 72
+
+	category = government
 
 	potential = {
 		has_overlord_dlc = yes
@@ -143,6 +149,8 @@ holding_satellite_campus = {
 	base_cap_amount = 1
 	position_priority = 60
 
+	category = research
+
 	potential = {
 		has_overlord_dlc = yes
 	}
@@ -184,6 +192,8 @@ holding_emporium = {
 	icon = holding_emporium
 	base_cap_amount = 1
 	position_priority = 24
+
+	category = amenity
 
 	triggered_planet_modifier = {
 		potential = {
@@ -230,6 +240,8 @@ holding_aid_agency = {
 	icon = holding_aid_agency
 	base_cap_amount = 1
 	position_priority = 39
+
+	category = amenity
 
 	allow = {
 		custom_tooltip = {
@@ -323,6 +335,8 @@ holding_energy_requisitorium = {
 	base_cap_amount = 1
 	position_priority = 21
 
+	category = resource
+
 	potential = {
 		has_overlord_dlc = yes
 	}
@@ -374,6 +388,8 @@ holding_material_requisitorium = {
 	icon = holding_material_requisitorium
 	base_cap_amount = 1
 	position_priority = 27
+
+	category = resource
 
 	potential = {
 		has_overlord_dlc = yes
@@ -430,6 +446,8 @@ holding_produce_requisitorium = {
 	icon = holding_produce_requisitorium
 	base_cap_amount = 1
 	position_priority = 30
+
+	category = resource
 
 	potential = {
 		has_overlord_dlc = yes
@@ -499,9 +517,7 @@ holding_splinter_hive = {
 	base_cap_amount = 1
 	position_priority = 3
 
-	potential = {
-		has_overlord_dlc = yes
-	}
+	category = pop_assembly
 
 	resources = {
 		category = planet_holdings
@@ -514,6 +530,7 @@ holding_splinter_hive = {
 	}
 
 	potential = {
+		has_overlord_dlc = yes
 		owner.overlord = { is_hive_empire = yes }
 	}
 
@@ -587,6 +604,8 @@ holding_distributed_processing = {
 	base_cap_amount = 1
 	position_priority = 63
 
+	category = research
+
 	potential = {
 		owner.overlord = {
 			is_machine_empire = yes
@@ -637,6 +656,8 @@ holding_offspring_nest = {
 	base_cap_amount = 1
 	position_priority = 66
 
+	category = government
+
 	resources = {
 		category = planet_holdings
 		cost = {
@@ -685,6 +706,8 @@ holding_offworld_foundry = {
 	icon = holding_offworld_foundry
 	base_cap_amount = 1
 	position_priority = 36
+
+	category = manufacturing
 
 	potential = {
 		has_overlord_dlc = yes
@@ -806,6 +829,8 @@ holding_overlord_vigil_command = {
 	empire_limit = 1
 	position_priority = 84
 
+	category = army
+
 	potential = {
 		has_overlord_dlc = yes
 	}
@@ -914,6 +939,8 @@ holding_parasitic_algorithms = {
 	empire_limit = 1
 	position_priority = 57
 
+	category = research
+
 	potential = {
 		has_overlord_dlc = yes
 	}
@@ -986,6 +1013,8 @@ holding_noble_vacation_homes = {
 	base_cap_amount = 1
 	position_priority = 9
 
+	category = amenity
+
 	resources = {
 		category = planet_holdings
 		cost = {
@@ -1046,6 +1075,8 @@ holding_dread_outpost = {
 	icon = building_dread_encampment
 	base_cap_amount = 1
 	position_priority = 54
+
+	category = army
 
 	resources = {
 		category = planet_holdings
@@ -1109,6 +1140,8 @@ holding_communal_housing_outreach = {
 	base_cap_amount = 1
 	position_priority = 15
 
+	category = amenity
+
 	resources = {
 		category = planet_holdings
 		cost = {
@@ -1168,6 +1201,8 @@ holding_idyllic_bloom = {
 	base_cap_amount = 1
 	position_priority = 6
 
+	category = government
+
 	resources = {
 		category = planet_holdings
 		cost = {
@@ -1185,10 +1220,7 @@ holding_idyllic_bloom = {
 		exists = owner
 		owner.overlord = {
 			is_country_type = default
-			OR = {
-				has_valid_civic = civic_idyllic_bloom
-				has_valid_civic = civic_hive_idyllic_bloom
-			}
+			is_idyllic_bloom_empire = yes
 		}
 		NOR = {
 			is_planet_class = pc_gaia
@@ -1278,6 +1310,8 @@ holding_reemployment_center = {
 	base_cap_amount = 1
 	position_priority = 75
 
+	category = pop_assembly
+
 	resources = {
 		category = planet_holdings
 		cost = {
@@ -1339,6 +1373,8 @@ holding_recruitment_office = {
 	base_cap_amount = 1
 	position_priority = 87
 
+	category = army
+
 	resources = {
 		category = planet_holdings
 		cost = {
@@ -1395,6 +1431,8 @@ holding_park_ranger_lodge = {
 	icon = holding_park_ranger_lodge
 	base_cap_amount = 1
 	position_priority = 48
+
+	category = amenity
 
 	resources = {
 		category = planet_holdings
@@ -1483,6 +1521,8 @@ holding_tree_of_life_sapling = {
 	base_cap_amount = 1
 	position_priority = 33
 
+	category = resource
+
 	resources = {
 		category = planet_holdings
 		cost = {
@@ -1542,6 +1582,8 @@ holding_experimental_crater = {
 	base_cap_amount = 1
 	position_priority = 69
 
+	category = research
+
 	resources = {
 		category = planet_holdings
 		produces = {
@@ -1591,6 +1633,8 @@ holding_organic_sanctuary = {
 	base_cap_amount = 1
 	position_priority = 51
 
+	category = unity
+
 	resources = {
 		category = planet_holdings
 		upkeep = {
@@ -1629,6 +1673,8 @@ holding_franchise_headquarters = {
 	icon = holding_franchise_headquarters
 	base_cap_amount = 1
 	position_priority = 45
+
+	category = government
 
 	destroy_trigger = {
 		NOT = {
@@ -1760,6 +1806,8 @@ holding_sacrificial_shrine = {
 	base_cap_amount = 1
 	position_priority = 78
 
+	category = unity
+
 	resources = {
 		category = planet_holdings
 		cost = {
@@ -1813,6 +1861,8 @@ holding_toxic_bath = {
 	base_cap_amount = 1
 	position_priority = 42
 
+	category = amenity
+
 	resources = {
 		category = planet_holdings
 		cost = {
@@ -1863,6 +1913,8 @@ holding_toxic_bath_hive = {
 	icon = building_toxic_bath_hive
 	base_cap_amount = 1
 	position_priority = 42
+
+	category = amenity
 
 	resources = {
 		category = planet_holdings
@@ -1915,6 +1967,8 @@ holding_toxic_bath_machine = {
 	base_cap_amount = 1
 	position_priority = 42
 
+	category = amenity
+
 	resources = {
 		category = planet_holdings
 		cost = {
@@ -1965,6 +2019,8 @@ holding_knight_commandery = {
 	icon = building_order_holding
 	base_cap_amount = 1
 	position_priority = 12
+
+	category = government
 
 	resources = {
 		category = planet_holdings
