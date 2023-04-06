@@ -4,5 +4,5 @@ tags={
 	"Fixes"
 	"Buildings"
 }
-name="Sort Those Buildings"
+name="Sort Those Buldings - Extra Ship Components NEXT"
 supported_version="3.7.4"

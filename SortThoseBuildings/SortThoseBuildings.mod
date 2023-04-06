@@ -1,4 +1,4 @@
-version="1.1.1"
+version="3.7.4_1"
 tags={
 	"Utilities"
 	"Fixes"

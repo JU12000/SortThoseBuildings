@@ -395,6 +395,7 @@ building_order_castle = {
 	can_be_disabled = no
 	can_build = no
 	position_priority = 228
+
 	category = government
 
 	destroy_trigger = {
