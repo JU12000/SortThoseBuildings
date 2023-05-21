@@ -7,7 +7,7 @@ building_autochthon_monument = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = unity
-	position_priority = 350
+	position_priority = 2081000
 
 	potential = {
 		exists = owner
@@ -257,7 +257,7 @@ building_bureaucratic_1 = {
 	exempt_from_ai_planet_specialization = no
 
 	category = unity
-	position_priority = 850
+	position_priority = 4081000
 
 	potential = {
 		exists = owner
@@ -568,7 +568,7 @@ building_temple = {
 	exempt_from_ai_planet_specialization = no
 
 	category = unity
-	position_priority = 850
+	position_priority = 4081000
 
 	potential = {
 		exists = owner
@@ -923,7 +923,7 @@ building_uplink_node = {
 	exempt_from_ai_planet_specialization = no
 
 	category = unity
-	position_priority = 850
+	position_priority = 4081000
 
 	potential = {
 		exists = owner
@@ -1132,7 +1132,7 @@ building_system_conflux = {
 ##################
 building_hive_node = {
 	base_buildtime = @b1_time
-	position_priority = 850
+	position_priority = 4081000
 
 	exempt_from_ai_planet_specialization = no
 
@@ -1421,7 +1421,7 @@ building_hive_confluence = {
 # Sacrificial Temple (basic)
 building_sacrificial_temple_1 = {
 	base_buildtime = @b1_time
-	position_priority = 850
+	position_priority = 4081000
 
 	category = unity
 
@@ -1706,7 +1706,7 @@ building_galactic_memorial_1 = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = unity
-	position_priority = 350
+	position_priority = 2081000
 
 	potential = {
 		exists = owner
@@ -2081,7 +2081,7 @@ building_simulation_1 = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	icon = building_holo_theatres
-	position_priority = 350
+	position_priority = 2081000
 
 	category = unity
 
@@ -2315,7 +2315,7 @@ building_corporate_monument = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	icon = building_autochthon_monument
-	position_priority = 350
+	position_priority = 2081000
 
 	category = unity
 
@@ -2542,7 +2542,7 @@ building_sensorium_1 = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	icon = building_holo_theatres
-	position_priority = 350
+	position_priority = 2081000
 
 	category = unity
 
@@ -2774,7 +2774,7 @@ building_sensorium_3 = {
 building_autocurating_vault = {
 	base_buildtime = @b2_time
 	base_cap_amount = 1
-	position_priority = 460
+	position_priority = 2083000
 
 	category = unity
 
@@ -2883,7 +2883,7 @@ building_autocurating_vault = {
 building_citadel_of_faith = {
 	base_buildtime = @b2_time
 	base_cap_amount = 1
-	position_priority = 460
+	position_priority = 2083000
 
 	category = unity
 
@@ -2991,7 +2991,7 @@ building_corporate_vault = {
 	base_buildtime = @b3_time
 	base_cap_amount = 1
 	icon = building_autocurating_vault
-	position_priority = 460
+	position_priority = 2083000
 
 	category = unity
 
@@ -3093,7 +3093,7 @@ building_alpha_hub = {
 	base_buildtime = @b3_time
 	base_cap_amount = 1
 	icon = building_autocurating_vault
-	position_priority = 460
+	position_priority = 2083000
 
 	category = unity
 
@@ -3175,7 +3175,7 @@ building_alpha_hub = {
 # Servitors
 building_organic_sanctuary = {
 	base_buildtime = @b1_time
-	position_priority = 575
+	position_priority = 4082000
 
 	category = unity
 
@@ -3417,7 +3417,7 @@ building_league_offices = {
 	empire_limit = {
 		base = 1
 	}
-	position_priority = 76
+	position_priority = 1081000
 
 	category = unity
 

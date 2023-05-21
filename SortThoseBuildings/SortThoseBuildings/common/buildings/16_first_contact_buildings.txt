@@ -6,7 +6,7 @@ building_low_tech_scrap_refinery = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = yes
-	position_priority = 98
+	position_priority = 1041000
 
 	category = manufacturing
 
@@ -69,7 +69,7 @@ building_low_tech_admin_hub = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = yes
-	position_priority = 850
+	position_priority = 1084000
 
 	category = unity
 
@@ -174,7 +174,7 @@ building_low_tech_power_plant = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = yes
-	position_priority = 97
+	position_priority = 1031000
 
 	category = resource
 
@@ -222,7 +222,7 @@ building_low_tech_farm = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = yes
-	position_priority = 99
+	position_priority = 1033000
 
 	category = resource
 
@@ -321,7 +321,7 @@ building_low_tech_research_lab = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = yes
-	position_priority = 966
+	position_priority = 1054000
 
 	category = research
 

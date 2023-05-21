@@ -3,7 +3,7 @@
 #############
 building_luxury_residence = {
 	base_buildtime = @b1_time
-	position_priority = 575
+	position_priority = 4071000
 
 	category = amenity
 
@@ -160,7 +160,7 @@ building_paradise_dome = {
 building_communal_housing = {
 	base_buildtime = @b1_time
 	icon = building_residence
-	position_priority = 575
+	position_priority = 4071000
 
 	category = amenity
 
@@ -330,7 +330,7 @@ building_communal_housing_large = {
 #Machine housing
 building_drone_storage = {
 	base_buildtime = @b1_time
-	position_priority = 575
+	position_priority = 4071000
 
 	category = amenity
 
@@ -443,7 +443,7 @@ building_drone_megastorage = {
 #Hive housing
 building_hive_warren = {
 	base_buildtime = @b1_time
-	position_priority = 575
+	position_priority = 4071000
 
 	category = amenity
 
@@ -543,7 +543,7 @@ building_expanded_warren = {
 
 building_holo_theatres = {
 	base_buildtime = @b1_time
-	position_priority = 1160
+	position_priority = 4072000
 
 	category = amenity
 
@@ -736,7 +736,7 @@ building_hyper_entertainment_forum = {
 building_clinic = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
-	position_priority = 270
+	position_priority = 2071000
 
 	category = amenity
 
@@ -979,7 +979,7 @@ building_maintenance_depot = {
 building_slave_huts = {
 	base_buildtime = 240
 	icon = building_crude_huts
-	position_priority = 575
+	position_priority = 4071100
 
 	category = amenity
 
@@ -1013,7 +1013,7 @@ building_slave_huts = {
 building_overseer_homes = {
 	base_buildtime = 240
 	icon = building_residence
-	position_priority = 550
+	position_priority = 4071000
 
 	category = amenity
 
@@ -1050,7 +1050,7 @@ building_ranger_lodge = {
 	base_cap_amount = 1
 	category = amenity
 	icon = holding_park_ranger_lodge
-	position_priority = 291
+	position_priority = 2073000
 	potential = {
 		NOT = {	has_modifier = slave_colony	}
 		owner = {
@@ -1176,7 +1176,7 @@ building_toxic_bath = {
 	base_cap_amount = 1
 	category = amenity
 	icon = building_toxic_bath
-	position_priority = 263
+	position_priority = 2072000
 
 	potential = {
 		NOT = { has_modifier = slave_colony }

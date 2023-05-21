@@ -3,7 +3,7 @@ holding_garrison = {
 	owner_type = subject_holding
 	icon = holding_overlord_garrison
 	base_cap_amount = 1
-	position_priority = 18
+	position_priority = 2092000
 
 	category = army
 
@@ -65,7 +65,7 @@ holding_orbital_assembly_complex = {
 	owner_type = subject_holding
 	icon = holding_orbital_assembly_complex
 	base_cap_amount = 1
-	position_priority = 81
+	position_priority = 2042000
 
 	category = manufacturing
 
@@ -98,7 +98,7 @@ holding_propaganda_office = {
 	owner_type = subject_holding
 	icon = holding_propaganda_office
 	base_cap_amount = 1
-	position_priority = 72
+	position_priority = 2023000
 
 	category = government
 
@@ -147,7 +147,7 @@ holding_satellite_campus = {
 	owner_type = subject_holding
 	icon = holding_satellite_campus
 	base_cap_amount = 1
-	position_priority = 60
+	position_priority = 2052000
 
 	category = research
 
@@ -191,7 +191,7 @@ holding_emporium = {
 	owner_type = subject_holding
 	icon = holding_emporium
 	base_cap_amount = 1
-	position_priority = 24
+	position_priority = 2071000
 
 	category = amenity
 
@@ -239,7 +239,7 @@ holding_aid_agency = {
 	owner_type = subject_holding
 	icon = holding_aid_agency
 	base_cap_amount = 1
-	position_priority = 39
+	position_priority = 2072000
 
 	category = amenity
 
@@ -333,7 +333,7 @@ holding_energy_requisitorium = {
 	owner_type = subject_holding
 	icon = holding_energy_requisitorium
 	base_cap_amount = 1
-	position_priority = 21
+	position_priority = 2031000
 
 	category = resource
 
@@ -387,7 +387,7 @@ holding_material_requisitorium = {
 	owner_type = subject_holding
 	icon = holding_material_requisitorium
 	base_cap_amount = 1
-	position_priority = 27
+	position_priority = 2032000
 
 	category = resource
 
@@ -445,7 +445,7 @@ holding_produce_requisitorium = {
 	owner_type = subject_holding
 	icon = holding_produce_requisitorium
 	base_cap_amount = 1
-	position_priority = 30
+	position_priority = 2033000
 
 	category = resource
 
@@ -515,7 +515,7 @@ holding_splinter_hive = {
 	owner_type = subject_holding
 	icon = holding_splinter_hive
 	base_cap_amount = 1
-	position_priority = 3
+	position_priority = 2011000
 
 	category = pop_assembly
 
@@ -602,7 +602,7 @@ holding_distributed_processing = {
 	owner_type = subject_holding
 	icon = holding_distributed_processing
 	base_cap_amount = 1
-	position_priority = 63
+	position_priority = 2052000
 
 	category = research
 
@@ -654,7 +654,7 @@ holding_offspring_nest = {
 	owner_type = subject_holding
 	icon = building_offspring_nest
 	base_cap_amount = 1
-	position_priority = 66
+	position_priority = 2021000
 
 	category = government
 
@@ -705,7 +705,7 @@ holding_offworld_foundry = {
 	owner_type = subject_holding
 	icon = holding_offworld_foundry
 	base_cap_amount = 1
-	position_priority = 36
+	position_priority = 2041000
 
 	category = manufacturing
 
@@ -827,7 +827,7 @@ holding_overlord_vigil_command = {
 	owner_type = subject_holding
 	icon = holding_overlord_vigil_command
 	empire_limit = 1
-	position_priority = 84
+	position_priority = 1091000
 
 	category = army
 
@@ -937,7 +937,7 @@ holding_parasitic_algorithms = {
 	owner_type = subject_holding
 	icon = holding_parasitic_algorithms
 	empire_limit = 1
-	position_priority = 57
+	position_priority = 1051000
 
 	category = research
 
@@ -1011,7 +1011,7 @@ holding_noble_vacation_homes = {
 	owner_type = subject_holding
 	icon = building_palace
 	base_cap_amount = 1
-	position_priority = 9
+	position_priority = 2073000
 
 	category = amenity
 
@@ -1074,7 +1074,7 @@ holding_dread_outpost = {
 	owner_type = subject_holding
 	icon = building_dread_encampment
 	base_cap_amount = 1
-	position_priority = 54
+	position_priority = 2091000
 
 	category = army
 
@@ -1138,7 +1138,7 @@ holding_communal_housing_outreach = {
 	owner_type = subject_holding
 	icon = building_residence
 	base_cap_amount = 1
-	position_priority = 15
+	position_priority = 2074000
 
 	category = amenity
 
@@ -1199,7 +1199,7 @@ holding_idyllic_bloom = {
 	owner_type = subject_holding
 	icon = building_gaiaseeders_4
 	base_cap_amount = 1
-	position_priority = 6
+	position_priority = 2025000
 
 	category = government
 
@@ -1308,7 +1308,7 @@ holding_reemployment_center = {
 	owner_type = subject_holding
 	icon = building_posthumous_employment_center
 	base_cap_amount = 1
-	position_priority = 75
+	position_priority = 2011000
 
 	category = pop_assembly
 
@@ -1371,7 +1371,7 @@ holding_recruitment_office = {
 	owner_type = subject_holding
 	icon = holding_recruitment_office
 	base_cap_amount = 1
-	position_priority = 87
+	position_priority = 2091000
 
 	category = army
 
@@ -1430,7 +1430,7 @@ holding_park_ranger_lodge = {
 	owner_type = subject_holding
 	icon = holding_park_ranger_lodge
 	base_cap_amount = 1
-	position_priority = 48
+	position_priority = 2076000
 
 	category = amenity
 
@@ -1519,7 +1519,7 @@ holding_tree_of_life_sapling = {
 	owner_type = subject_holding
 	icon = holding_tree_of_life_sapling
 	base_cap_amount = 1
-	position_priority = 33
+	position_priority = 2034000
 
 	category = resource
 
@@ -1580,7 +1580,7 @@ holding_experimental_crater = {
 	owner_type = subject_holding
 	icon = holding_experimental_crater
 	base_cap_amount = 1
-	position_priority = 69
+	position_priority = 2051000
 
 	category = research
 
@@ -1631,7 +1631,7 @@ holding_organic_sanctuary = {
 	owner_type = subject_holding
 	icon = building_organic_sanctuary
 	base_cap_amount = 1
-	position_priority = 51
+	position_priority = 2081000
 
 	category = unity
 
@@ -1672,7 +1672,7 @@ holding_franchise_headquarters = {
 	owner_type = subject_holding
 	icon = holding_franchise_headquarters
 	base_cap_amount = 1
-	position_priority = 45
+	position_priority = 2022000
 
 	category = government
 
@@ -1804,7 +1804,7 @@ holding_sacrificial_shrine = {
 	owner_type = subject_holding
 	icon = building_sacrificial_temple_2
 	base_cap_amount = 1
-	position_priority = 78
+	position_priority = 2081000
 
 	category = unity
 
@@ -1859,7 +1859,7 @@ holding_toxic_bath = {
 	owner_type = subject_holding
 	icon = building_toxic_bath
 	base_cap_amount = 1
-	position_priority = 42
+	position_priority = 2075000
 
 	category = amenity
 
@@ -1912,7 +1912,7 @@ holding_toxic_bath_hive = {
 	owner_type = subject_holding
 	icon = building_toxic_bath_hive
 	base_cap_amount = 1
-	position_priority = 42
+	position_priority = 2075000
 
 	category = amenity
 
@@ -1965,7 +1965,7 @@ holding_toxic_bath_machine = {
 	owner_type = subject_holding
 	icon = building_toxic_bath_machine
 	base_cap_amount = 1
-	position_priority = 42
+	position_priority = 2075000
 
 	category = amenity
 
@@ -2018,7 +2018,7 @@ holding_knight_commandery = {
 	owner_type = subject_holding
 	icon = building_order_holding
 	base_cap_amount = 1
-	position_priority = 12
+	position_priority = 2024000
 
 	category = government
 

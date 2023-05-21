@@ -5,7 +5,7 @@ building_noble_estates = {
 	base_buildtime = @b2_time
 	icon = building_palace
 	base_cap_amount = 1
-	position_priority = 221
+	position_priority = 2021000
 
 	category = government
 
@@ -69,7 +69,7 @@ building_noble_estates = {
 building_slave_processing = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
-	position_priority = 221
+	position_priority = 2023000
 
 	category = government
 
@@ -137,7 +137,7 @@ building_slave_processing = {
 
 building_precinct_house = {
 	base_buildtime = @b1_time
-	position_priority = 650
+	position_priority = 4021000
 
 	category = government
 
@@ -254,7 +254,7 @@ building_hall_judgment = {
 
 building_sentinel_posts = {
 	base_buildtime = @b1_time
-	position_priority = 650
+	position_priority = 4021000
 
 	category = government
 
@@ -312,7 +312,7 @@ building_sentinel_posts = {
 
 building_order_keep = {
 	base_buildtime = 180
-	position_priority = 32
+	position_priority = 1022000
 
 	can_demolish = no
 	can_be_disabled = no
@@ -396,7 +396,7 @@ building_order_castle = {
 	can_demolish = no
 	can_be_disabled = no
 	can_build = no
-	position_priority = 228
+	position_priority = 2025000
 
 	category = government
 
@@ -448,7 +448,7 @@ building_order_castle = {
 #Psionic path
 building_psi_corps = {
 	base_buildtime = @b2_time
-	position_priority = 277
+	position_priority = 2024000
 
 	category = government
 
@@ -508,7 +508,7 @@ building_psi_corps = {
 
 building_embassy = {
 	base_buildtime = @b2_time
-	position_priority = 48
+	position_priority = 1023000
 
 	category = government
 
@@ -655,7 +655,7 @@ building_gaiaseeders_1 = {
 	category = government
 	can_be_disabled = no
 	upgrades = { "building_gaiaseeders_2" }
-	position_priority = 214
+	position_priority = 2025000
 
 	potential = {
 		exists = owner

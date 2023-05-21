@@ -44,7 +44,7 @@ building_primitive_dwellings = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = no
-	position_priority = 1384
+	position_priority = 5072000
 
 	category = amenity
 
@@ -141,7 +141,7 @@ building_primitive_factory = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = no
-	position_priority = 1370
+	position_priority = 5041000
 
 	category = manufacturing
 
@@ -182,7 +182,7 @@ building_primitive_mine = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = no
-	position_priority = 1342
+	position_priority = 5032000
 
 	category = resource
 
@@ -232,7 +232,7 @@ building_primitive_power_plant = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = no
-	position_priority = 1328
+	position_priority = 5031000
 
 	category = resource
 
@@ -273,7 +273,7 @@ building_primitive_farm = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = no
-	position_priority = 1356
+	position_priority = 5033000
 
 	category = resource
 
@@ -404,7 +404,7 @@ building_urban_dwellings = {
 	can_demolish = yes
 	can_be_ruined = no
 	icon = building_residence
-	position_priority = 1384
+	position_priority = 5072000
 
 	category = amenity
 
@@ -445,7 +445,7 @@ building_pre_ftl_radio_telescope = {
 	can_demolish = yes
 	can_be_ruined = no
 	base_cap_amount = 1
-	position_priority = 1321
+	position_priority = 5051000
 
 	category = research
 
@@ -536,7 +536,7 @@ building_hive_primitive_dwellings = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = no
-	position_priority = 1384
+	position_priority = 5072000
 
 	category = amenity
 
@@ -635,7 +635,7 @@ building_hive_primitive_factory = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = no
-	position_priority = 1370
+	position_priority = 5041000
 
 	category = manufacturing
 
@@ -677,7 +677,7 @@ building_hive_primitive_mine = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = no
-	position_priority = 1342
+	position_priority = 5032000
 
 	category = resource
 
@@ -728,7 +728,7 @@ building_hive_primitive_power_plant = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = no
-	position_priority = 1328
+	position_priority = 5031000
 
 	category = resource
 
@@ -770,7 +770,7 @@ building_hive_primitive_farm = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = no
-	position_priority = 1356
+	position_priority = 5033000
 
 	category = resource
 
@@ -901,7 +901,7 @@ building_hive_urban_dwellings = {
 	can_demolish = yes
 	can_be_ruined = no
 	icon = building_residence
-	position_priority = 1384
+	position_priority = 5072000
 
 	category = amenity
 
@@ -943,7 +943,7 @@ building_primitive_clinic = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = no
-	position_priority = 1319
+	position_priority = 5071000
 
 	category = amenity
 
@@ -1014,7 +1014,7 @@ building_solarpunk_gaiaseeder = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = no
-	position_priority = 1317
+	position_priority = 5073000
 
 	category = amenity
 
@@ -1069,7 +1069,7 @@ building_solarpunk_ranger_lodge = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = no
-	position_priority = 1320
+	position_priority = 5074000
 
 	category = amenity
 
@@ -1124,7 +1124,7 @@ building_solarpunk_sapling = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = no
-	position_priority = 1324
+	position_priority = 5075000
 
 	category = amenity
 
@@ -1180,7 +1180,7 @@ building_solarpunk_organic_paradise = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = no
-	position_priority = 1384
+	position_priority = 5072000
 
 	category = amenity
 

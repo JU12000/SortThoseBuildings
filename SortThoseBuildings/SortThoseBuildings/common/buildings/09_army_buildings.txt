@@ -6,7 +6,7 @@ building_military_academy = {
 	base_cap_amount = 1
   can_be_ruined = no
 	category = army
-  position_priority = 249
+  position_priority = 2092000
 
 	potential = {
 		exists = owner
@@ -111,7 +111,7 @@ building_dread_encampment = {
 	base_cap_amount = 1
 	can_be_ruined = no
 	category = army
-  position_priority = 249
+  position_priority = 2092000
 
 	potential = {
 		exists = owner
@@ -154,7 +154,7 @@ building_dread_encampment = {
 
 building_stronghold = {
 	base_buildtime = 240
-	position_priority = 1250
+	position_priority = 4091000
 	can_be_ruined = no
 	category = army
 	exempt_from_ai_planet_specialization = no
@@ -280,7 +280,7 @@ building_fortress = {
 building_planetary_shield_generator = {
 	base_buildtime = @b3_time
 	base_cap_amount = 1
-	position_priority = 242
+	position_priority = 2091000
 	can_be_ruined = no
 	category = army
 

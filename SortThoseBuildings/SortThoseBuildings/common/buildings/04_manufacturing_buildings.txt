@@ -5,7 +5,7 @@ building_foundry_1 = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = manufacturing
-	position_priority = 450
+	position_priority = 2042000
 
 	potential = {
 		NOR = {
@@ -589,7 +589,7 @@ building_factory_1 = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = manufacturing
-	position_priority = 440
+	position_priority = 2041000
 
 	potential = {
 		exists = owner
@@ -1031,7 +1031,7 @@ building_factory_3 = {
 
 building_refinery = {
 	base_buildtime = @b2_time
-	position_priority = 1072
+	position_priority = 4043000
 
 	exempt_from_ai_planet_specialization = no
 	category = manufacturing
@@ -1097,7 +1097,7 @@ building_refinery = {
 
 building_chemical_plant = {
 	base_buildtime = @b2_time
-	position_priority = 1060
+	position_priority = 4042000
 
 	exempt_from_ai_planet_specialization = no
 	category = manufacturing
@@ -1163,7 +1163,7 @@ building_chemical_plant = {
 
 building_crystal_plant = {
 	base_buildtime = @b2_time
-	position_priority = 1084
+	position_priority = 4044000
 
 	exempt_from_ai_planet_specialization = no
 	category = manufacturing
@@ -1233,7 +1233,7 @@ building_crystal_plant = {
 
 building_nanite_transmuter = {
 	base_buildtime = @b3_time
-	position_priority = 1012
+	position_priority = 4041000
 
 	category = manufacturing
 
@@ -1306,7 +1306,7 @@ building_ministry_production = {
 	base_buildtime = @b2_time
 	base_cap_amount = 1
 	icon = building_production_center
-	position_priority = 480
+	position_priority = 2044000
 
 	category = manufacturing
 
@@ -1399,7 +1399,7 @@ building_ministry_production = {
 building_production_center = {
 	base_buildtime = @b2_time
 	base_cap_amount = 1
-	position_priority = 480
+	position_priority = 2044000
 
 	category = manufacturing
 
@@ -1557,7 +1557,7 @@ building_production_center = {
 building_coordinated_fulfillment_center_1 = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
-	position_priority = 490
+	position_priority = 2043000
 
 	category = manufacturing
 
@@ -1873,7 +1873,7 @@ building_coordinated_fulfillment_center_2 = {
 building_archaeo_refinery = {
 	base_buildtime = @b3_time
 	base_cap_amount = 1
-	position_priority = 495
+	position_priority = 2045000
 
 	category = manufacturing
 
