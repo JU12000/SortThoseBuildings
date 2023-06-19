@@ -5,10 +5,12 @@ building_mem_colony_ship_shelter = {
     can_be_ruined = no
     icon = building_colony_shelter
 		position_priority = 0
-
+    
+	category = government
+	
     potential = {
         exists = owner
-        owner = {
+        owner = { 
             is_country_type = primitive
             has_country_flag = mem_use_custom_primitive_buildings
         }
@@ -22,10 +24,10 @@ building_mem_colony_ship_shelter = {
 		planet_amenities_add = 25
 		planet_crime_add = -20
     }
-
+    
     upgrades = {
     }
-
+    
     convert_to = {
         building_capital
 		building_hive_capital
@@ -33,11 +35,11 @@ building_mem_colony_ship_shelter = {
 		building_resort_capital
 		building_slave_capital
     }
-
+    
     destroy_trigger = {
 		NAND = {
             exists = owner
-            owner = {
+            owner = { 
                 is_country_type = primitive
                 has_country_flag = mem_use_custom_primitive_buildings
             }
@@ -51,11 +53,13 @@ building_mem_colony_ship_protocity = {
 	can_be_ruined = no
     capital = yes
     icon = building_residence
-		position_priority = 1384
-
+		position_priority = 0
+    
+	category = government
+	
     potential = {
         exists = owner
-        owner = {
+        owner = { 
             is_country_type = primitive
             has_country_flag = mem_use_custom_primitive_buildings
         }
@@ -73,14 +77,14 @@ building_mem_colony_ship_protocity = {
         job_mem_primitive_miner_add = 2
         job_mem_primitive_laborer_add = 1
 	}
-
+		
 	upgrades = {
 	}
 
     destroy_trigger = {
 		NAND = {
             exists = owner
-            owner = {
+            owner = { 
                 is_country_type = primitive
                 has_country_flag = mem_use_custom_primitive_buildings
             }
@@ -93,11 +97,13 @@ building_mem_colony_ship_farming_outpost = {
 	can_demolish = yes
     can_be_ruined = no
     icon = building_primitive_dwellings
-		position_priority = 1356
+		position_priority = 5033001
+
+	category = resource
 
     potential = {
         exists = owner
-        owner = {
+        owner = { 
             is_country_type = primitive
             has_country_flag = mem_use_custom_primitive_buildings
         }
@@ -114,7 +120,7 @@ building_mem_colony_ship_farming_outpost = {
     destroy_trigger = {
 		NAND = {
             exists = owner
-            owner = {
+            owner = { 
                 is_country_type = primitive
                 has_country_flag = mem_use_custom_primitive_buildings
             }
@@ -127,11 +133,13 @@ building_mem_colony_ship_industrial_outpost = {
 	can_demolish = yes
     can_be_ruined = no
     icon = building_primitive_factory
-		position_priority = 1370
+		position_priority = 5041001
+
+	category = manufacturing
 
     potential = {
         exists = owner
-        owner = {
+        owner = { 
             is_country_type = primitive
             has_country_flag = mem_use_custom_primitive_buildings
         }
@@ -148,7 +156,7 @@ building_mem_colony_ship_industrial_outpost = {
     destroy_trigger = {
 		NAND = {
             exists = owner
-            owner = {
+            owner = { 
                 is_country_type = primitive
                 has_country_flag = mem_use_custom_primitive_buildings
             }
@@ -161,11 +169,13 @@ building_mem_colony_ship_power_outpost = {
 	can_demolish = yes
     can_be_ruined = no
     icon = building_primitive_power_plant
-		position_priority = 1328
+		position_priority = 5031001
+	
+	category = resource
 
     potential = {
         exists = owner
-        owner = {
+        owner = { 
             is_country_type = primitive
             has_country_flag = mem_use_custom_primitive_buildings
         }
@@ -179,7 +189,7 @@ building_mem_colony_ship_power_outpost = {
     destroy_trigger = {
 		NAND = {
             exists = owner
-            owner = {
+            owner = { 
                 is_country_type = primitive
                 has_country_flag = mem_use_custom_primitive_buildings
             }
@@ -192,11 +202,13 @@ building_mem_colony_ship_mining_outpost = {
 	can_demolish = yes
     can_be_ruined = no
     icon = building_primitive_mine
-		position_priority = 1342
+		position_priority = 5032001
+	
+	category = resource
 
     potential = {
         exists = owner
-        owner = {
+        owner = { 
             is_country_type = primitive
             has_country_flag = mem_use_custom_primitive_buildings
         }
@@ -210,7 +222,7 @@ building_mem_colony_ship_mining_outpost = {
     destroy_trigger = {
 		NAND = {
             exists = owner
-            owner = {
+            owner = { 
                 is_country_type = primitive
                 has_country_flag = mem_use_custom_primitive_buildings
             }

@@ -2,7 +2,9 @@ building_mem_lunar_age_elevator = {
     can_build = no
 	can_demolish = yes
     can_be_ruined = no
-		position_priority = 1392
+		position_priority = 5021001
+
+	category = government
 
     potential = {
         exists = owner
@@ -37,6 +39,8 @@ building_mem_lunar_age_colonial_administration = {
     icon = building_organic_sanctuary
 		position_priority = 0
 
+	category = government
+
     potential = {
         exists = owner
         owner = {
@@ -52,7 +56,7 @@ building_mem_lunar_age_colonial_administration = {
 		planet_amenities_add = 25
 		planet_crime_add = -20
     }
-
+    
     upgrades = {
     }
 
@@ -80,7 +84,9 @@ building_mem_lunar_age_colonial_housing = {
 	can_demolish = yes
     can_be_ruined = no
     icon = building_pirate_haven
-		position_priority = 1384
+		position_priority = 5071001
+
+	category = amenity
 
     potential = {
         exists = owner

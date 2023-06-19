@@ -1,7 +1,7 @@
 building_mem_crystal_harvester = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
-	position_priority = 1054
+	position_priority = 3034001
 
 	category = resource
 

@@ -3,7 +3,7 @@ building_mem_outsiders_rift_power_plant = {
 	category = resource
 	base_cap_amount = 1
 	# icon = building_power_plant_3
-	position_priority = 415
+	position_priority = 2031001
 
 	potential = {
 		NOT = { has_modifier = resort_colony }
@@ -114,7 +114,7 @@ building_mem_outsiders_rift_power_plant = {
 		modifier = {
 			weight = 5
 			buildings_build_building = yes
-			owner = {
+			owner = { 
 				has_monthly_income = {
 					resource = sr_dark_matter
 					value > 1

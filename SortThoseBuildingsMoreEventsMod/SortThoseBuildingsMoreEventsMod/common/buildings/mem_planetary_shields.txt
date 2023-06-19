@@ -3,24 +3,24 @@
 
 # Increases the time it takes to bombard the planet
 building_planetary_shield_generator = {
-	base_buildtime = 600
+	base_buildtime = 600	
 	base_cap_amount = 1
 	position_priority = 100
 	can_build = no
-	position_priority = 242
+	position_priority = 2091000
 
 	category = army
-
+	
 	allow = {
 		has_upgraded_capital = yes
 		owner = { is_ai = no }
 	}
-
+	
 	destroy_trigger = {
 		exists = owner
 		owner = { is_ai = yes }
 	}
-
+	
 	planet_modifier = {
 		planet_orbital_bombardment_damage = -0.5
 	}
@@ -29,15 +29,15 @@ building_planetary_shield_generator = {
 		category = planet_buildings
 		cost = {
 			minerals = 500
-		}
+		}			
 		upkeep = {
 			energy = 5
 		}
 	}
-
+	
 	prerequisites = {
 	}
-
+	
 	ai_weight = {
 		weight = 0
 	}
@@ -46,12 +46,12 @@ building_planetary_shield_generator = {
 # mem shield generator
 building_mem_planetary_shield_generator = {
 	icon = "building_planetary_shield_generator"
-	base_buildtime = 600
+	base_buildtime = 600	
 	base_cap_amount = 1
-	position_priority = 242
+	position_priority = 2091000
 
 	category = army
-
+		
 	planet_modifier = {
 		planet_orbital_bombardment_damage = -0.5
 	}
@@ -60,7 +60,7 @@ building_mem_planetary_shield_generator = {
 		category = planet_buildings
 		cost = {
 			minerals = 500
-		}
+		}			
 		upkeep = {
 			energy = 5
 		}
@@ -103,23 +103,23 @@ building_mem_planetary_shield_generator = {
 		}
 		text = job_soldier_effect_desc
 	}
-
+		
 	potential = {
 		planet = {
 			NOT = {
 				is_planet_class = pc_asteroid
-			}
+			}	
 		}
 		NOR = {
 			has_building = "building_mem_planetary_shield_generator_heavy"
 			has_building = "building_mem_planetary_shield_generator_orila"
 		}
 	}
-
+	
 	allow = {
 		has_upgraded_capital = yes
 	}
-
+	
 	prerequisites = {
 		"tech_planetary_shield_generator"
 	}
@@ -156,13 +156,14 @@ building_mem_planetary_shield_generator_heavy = {
 	allow = {
 		has_upgraded_capital = yes
 	}
-
+	
 	planet_modifier = {
 		planet_orbital_bombardment_damage = -0.6
 	}
 
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { is_gestalt = no }
 		}
 		modifier = {
@@ -184,10 +185,10 @@ building_mem_planetary_shield_generator_heavy = {
 		cost = {
 			minerals = 800
 			rare_crystals = 50
-		}
+		}	
 		upkeep = {
 			energy = 6
-			rare_crystals = 1
+			rare_crystals = 1				
 		}
 	}
 
@@ -214,7 +215,7 @@ building_mem_planetary_shield_generator_heavy = {
 		weight = 10000
 		modifier = {
 			factor = 0
-			owner = {
+			owner = { 
 				has_monthly_income = {
 					resource = rare_crystals
 					value < 3
@@ -229,7 +230,7 @@ building_mem_planetary_shield_generator_orila = {
 	can_build = no
 	can_demolish = yes
 	planetary_ftl_inhibitor = yes
-	position_priority = 242
+	position_priority = 4091001
 
 	category = army
 
@@ -270,7 +271,7 @@ building_mem_planetary_shield_generator_orila = {
 		}
 		text = job_soldier_effect_desc
 	}
-
+	
 	planet_modifier = {
 		planet_orbital_bombardment_damage = -0.7
 	}

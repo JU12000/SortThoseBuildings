@@ -7,15 +7,17 @@ building_mem_primitive_capital = {
     can_be_ruined = no
     icon = building_primitive_capital
 	position_priority = 0
-
+	
+	category = government
+	
 	potential = {
 		exists = owner
-		owner = {
+		owner = { 
 			is_primitive = yes
             has_country_flag = mem_use_custom_primitive_buildings
 		}
 	}
-
+	
 	planet_modifier = {
 		job_mem_primitive_bureaucrat_add = 2
 		job_mem_primitive_warrior_2_add = 2
@@ -25,7 +27,7 @@ building_mem_primitive_capital = {
 		planet_amenities_add = 25
 		planet_crime_add = -20
 	}
-
+		
 	upgrades = {
 	}
 
@@ -36,11 +38,11 @@ building_mem_primitive_capital = {
 		building_resort_capital
 		building_slave_capital
     }
-
+    
     destroy_trigger = {
 		NAND = {
             exists = owner
-            owner = {
+            owner = { 
                 is_country_type = primitive
                 has_country_flag = mem_use_custom_primitive_buildings
             }
@@ -53,20 +55,22 @@ building_mem_urban_dwellings = {
 	can_demolish = yes
 	can_be_ruined = no
 	icon = building_residence
-	position_priority = 1384
-
+	position_priority = 5071000
+	
+	category = amenity
+	
 	potential = {
 		exists = owner
-		owner = {
+		owner = { 
 			is_primitive = yes
 			has_country_flag = mem_use_custom_primitive_buildings
 		}
 	}
-
+	
 	planet_modifier = {
 		planet_housing_add = 24
 	}
-
+		
 	upgrades = {
 	}
 }
@@ -76,20 +80,22 @@ building_mem_primitive_factory = {
 	can_demolish = yes
 	can_be_ruined = no
 	icon = building_primitive_factory
-	position_priority = 1370
-
+	position_priority = 5041000
+	
+	category = manufacturing
+	
 	potential = {
 		exists = owner
-		owner = {
+		owner = { 
 			is_primitive = yes
 			has_country_flag = mem_use_custom_primitive_buildings
 		}
 	}
-
+	
 	planet_modifier = {
 		job_mem_primitive_laborer_add = 2
 	}
-
+		
 	upgrades = {
 	}
 }
@@ -99,20 +105,22 @@ building_mem_primitive_mine = {
 	can_demolish = yes
 	can_be_ruined = no
 	icon = building_primitive_mine
-	position_priority = 1342
-
+	position_priority = 5032000
+	
+	category = resource
+	
 	potential = {
 		exists = owner
-		owner = {
+		owner = { 
 			is_primitive = yes
 			has_country_flag = mem_use_custom_primitive_buildings
 		}
 	}
-
+	
 	planet_modifier = {
 		job_mem_primitive_miner_add = 2
 	}
-
+		
 	upgrades = {
 	}
 }
@@ -122,20 +130,22 @@ building_mem_primitive_power_plant = {
 	can_demolish = yes
 	can_be_ruined = no
 	icon = building_primitive_power_plant
-	position_priority = 1328
-
+	position_priority = 5031000
+	
+	category = resource
+	
 	potential = {
 		exists = owner
-		owner = {
+		owner = { 
 			is_primitive = yes
 			has_country_flag = mem_use_custom_primitive_buildings
 		}
 	}
-
+	
 	planet_modifier = {
 		job_mem_primitive_technician_add = 2
 	}
-
+		
 	upgrades = {
 	}
 }
@@ -145,20 +155,22 @@ building_mem_primitive_farm = {
 	can_demolish = yes
 	can_be_ruined = no
 	icon = building_primitive_farm
-	position_priority = 1356
-
+	position_priority = 5033000
+	
+	category = resource
+	
 	potential = {
 		exists = owner
-		owner = {
+		owner = { 
 			is_primitive = yes
 			has_country_flag = mem_use_custom_primitive_buildings
 		}
 	}
-
+	
 	planet_modifier = {
 		job_mem_primitive_farmer_add = 10
 	}
-
+		
 	upgrades = {
 	}
 }
