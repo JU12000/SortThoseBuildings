@@ -3,7 +3,7 @@ building_mem_outsiders_rift_power_plant = {
 	category = resource
 	base_cap_amount = 1
 	# icon = building_power_plant_3
-	position_priority = 2031001
+	position_priority = 2032001
 
 	potential = {
 		NOT = { has_modifier = resort_colony }
