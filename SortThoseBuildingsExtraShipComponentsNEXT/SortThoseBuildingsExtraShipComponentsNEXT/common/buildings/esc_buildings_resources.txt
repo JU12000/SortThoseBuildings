@@ -17,7 +17,7 @@
 
 esc_building_zro_distillery = {
 	base_buildtime = 360
-	position_priority = 1055
+	position_priority = 2045004
 	base_cap_amount = 1
 	icon = esc_building_zro_distillery
 	category = manufacturing
@@ -96,7 +96,7 @@ esc_building_zro_distillery = {
 
 esc_building_dark_matter_facility = {
 	base_buildtime = 360
-	position_priority = 1059
+	position_priority = 2046004
 	base_cap_amount = 1
 	icon = esc_building_dark_matter_facility
 	category = manufacturing
@@ -178,7 +178,7 @@ esc_building_dark_matter_facility = {
 
 esc_building_nanite_foundry = {
 	base_buildtime = 540
-	position_priority = 1009
+	position_priority = 4045004
 	icon = esc_building_nanite_foundry
 	category = manufacturing
 
@@ -257,7 +257,7 @@ esc_building_nanite_foundry = {
 
 esc_building_crystal_farm_1 = {
     base_buildtime = 360
-	position_priority = 1088
+	position_priority = 4044004
 	icon = esc_building_crystal_farm_1
 	category = manufacturing
 
@@ -330,7 +330,7 @@ esc_building_crystal_farm_1 = {
 ############################################################
 
 esc_building_crystal_farm_2 = {
-	base_buildtime = 360
+    base_buildtime = 360
 	icon = esc_building_crystal_farm_2
 	category = manufacturing
 	can_build = no
@@ -404,7 +404,7 @@ esc_building_crystal_farm_2 = {
 
 esc_building_reprocessing_plant = {
 	base_buildtime = 360
-	position_priority = 438
+	position_priority = 2044004
 	base_cap_amount = 1
 	icon = esc_building_reprocessing_plant
 	category = manufacturing
@@ -498,7 +498,7 @@ esc_building_reprocessing_plant = {
 
 esc_building_magmaminer_1 = {
 	base_buildtime = 1080
-	position_priority = 422
+	position_priority = 2032004
 	base_cap_amount = 1
 	icon = esc_building_magmaminer_1
 	category = resource

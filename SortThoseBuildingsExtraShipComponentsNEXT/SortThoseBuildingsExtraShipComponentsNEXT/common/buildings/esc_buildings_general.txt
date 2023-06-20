@@ -19,7 +19,7 @@
 
 esc_building_central_research_bureau = {
 	base_buildtime = 540
-	position_priority = 85
+	position_priority = 1051104
 	category = research
 	icon = esc_building_centralresearchbureau
 	empire_limit = { base = 1 }
@@ -141,7 +141,7 @@ esc_building_central_research_bureau = {
 
 esc_building_culture_nexus = {
 	base_buildtime = 360
-	position_priority = 78
+	position_priority = 1081004
 	icon = esc_building_culture_nexus
 	category = unity
 
@@ -305,7 +305,7 @@ esc_building_culture_nexus = {
 
 esc_building_cerebral_node = {
 	base_buildtime = 360
-	position_priority = 78
+	position_priority = 1081004
 	icon = esc_building_culture_nexus
 	category = unity
 
@@ -416,7 +416,7 @@ esc_building_cerebral_node = {
 
 esc_building_network_regulator = {
 	base_buildtime = 360
-	position_priority = 78
+	position_priority = 1081004
 	icon = esc_building_culture_nexus
 	category = unity
 
@@ -526,7 +526,7 @@ esc_building_network_regulator = {
 
 esc_building_materials_laboratory = {
 	base_buildtime = 360
-	position_priority = 92
+	position_priority = 1051304
 	icon = esc_building_materials_laboratory
 	category = research
 
@@ -642,7 +642,7 @@ esc_building_materials_laboratory = {
 
 esc_building_technology_institute = {
 	base_buildtime = 360
-	position_priority = 90
+	position_priority = 1051204
 	icon = esc_building_technology_institute
 	category = research
 
@@ -758,7 +758,7 @@ esc_building_technology_institute = {
 
 esc_building_watcher = {
 	base_buildtime = 540
-	position_priority = 82
+	position_priority = 1051004
 	icon = esc_building_watcher
 	category = research
 
@@ -864,7 +864,7 @@ esc_building_watcher = {
 
 esc_building_stellar_energy_tower = {
 	base_buildtime = 360
-	position_priority = 411
+	position_priority = 2031004
 	base_cap_amount = 1
 	icon = esc_building_stellar_energy_tower
 	category = resource
@@ -968,7 +968,7 @@ esc_building_stellar_energy_tower = {
 
 esc_building_quantum_node = {
 	base_buildtime = 360
-	position_priority = 474
+	position_priority = 2051004
 	base_cap_amount = 1
 	icon = esc_building_quantum_node
 	category = research
@@ -1069,7 +1069,7 @@ esc_building_quantum_node = {
 
 esc_building_dragon_hatchery = {
 	base_buildtime = 720
-	position_priority = 110
+	position_priority = 1091004
 	icon = esc_building_dragon_hatchery
 	category = army
 	empire_limit = { base = 1 }
