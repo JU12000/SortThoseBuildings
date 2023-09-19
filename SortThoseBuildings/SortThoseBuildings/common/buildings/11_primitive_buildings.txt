@@ -24,7 +24,7 @@ building_crude_huts = {
 		exists = owner
 		owner = {
 			OR = {
-			is_primitive = no
+				is_primitive = no
 				is_hive_empire = yes
 			}
 		}
@@ -67,7 +67,7 @@ building_primitive_dwellings = {
 		exists = owner
 		owner = {
 			OR = {
-			is_primitive = no
+				is_primitive = no
 				is_hive_empire = yes
 			}
 		}
@@ -164,7 +164,7 @@ building_primitive_factory = {
 		exists = owner
 		owner = {
 			OR = {
-			is_primitive = no
+				is_primitive = no
 				is_hive_empire = yes
 			}
 		}
@@ -205,7 +205,7 @@ building_primitive_mine = {
 		exists = owner
 		owner = {
 			OR = {
-			is_primitive = no
+				is_primitive = no
 				is_hive_empire = yes
 			}
 		}
@@ -255,7 +255,7 @@ building_primitive_power_plant = {
 		exists = owner
 		owner = {
 			OR = {
-			is_primitive = no
+				is_primitive = no
 				is_hive_empire = yes
 			}
 		}
@@ -342,7 +342,7 @@ building_primitive_capital = {
 		exists = owner
 		owner = {
 			OR = {
-			is_primitive = no
+				is_primitive = no
 				is_hive_empire = yes
 			}
 		}
@@ -425,7 +425,7 @@ building_urban_dwellings = {
 	destroy_trigger = {
 		exists = owner
 		owner = {
-						OR = {
+			OR = {
 				is_primitive = no
 				is_hive_empire = yes
 			}
@@ -751,8 +751,8 @@ building_hive_primitive_power_plant = {
 		exists = owner
 		owner = {
 			OR = {
-			is_primitive = no
-							is_hive_empire = no
+				is_primitive = no
+				is_hive_empire = no
 			}
 		}
 	}
@@ -1000,11 +1000,11 @@ building_primitive_clinic = {
 	}
 
 	on_destroy = {
-
+		
 	}
 
 	on_repaired = {
-
+		
 	}
 }
 
@@ -1055,11 +1055,11 @@ building_solarpunk_gaiaseeder = {
 	}
 
 	on_destroy = {
-
+		
 	}
 
 	on_repaired = {
-
+		
 	}
 }
 
@@ -1110,11 +1110,11 @@ building_solarpunk_ranger_lodge = {
 	}
 
 	on_destroy = {
-
+		
 	}
 
 	on_repaired = {
-
+		
 	}
 }
 
@@ -1166,11 +1166,11 @@ building_solarpunk_sapling = {
 	}
 
 	on_destroy = {
-
+		
 	}
 
 	on_repaired = {
-
+		
 	}
 }
 
@@ -1223,10 +1223,10 @@ building_solarpunk_organic_paradise = {
 	}
 
 	on_destroy = {
-
+		
 	}
 
 	on_repaired = {
-
+		
 	}
 }

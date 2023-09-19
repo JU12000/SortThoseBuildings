@@ -212,9 +212,9 @@ building_affluence_center = {
 		custom_tooltip = {
 			fail_text = ancrel.10004.failtext
 			owner = {
-					check_variable = { which = affluence_center_build_count value >= 1 }
-				}
+				check_variable = { which = affluence_center_build_count value >= 1 }
 			}
+		}
 	}
 
 	resources = {
@@ -273,9 +273,9 @@ building_nourishment_center = {
 		custom_tooltip = {
 			fail_text = ancrel.10004.failtext
 			owner = {
-					check_variable = { which = nourishment_center_build_count value >= 1 }
-				}
+				check_variable = { which = nourishment_center_build_count value >= 1 }
 			}
+		}
 	}
 
 	planet_modifier = {
@@ -336,8 +336,8 @@ building_dimensional_fabricator = {
 		custom_tooltip = {
 			fail_text = ancrel.10004.failtext
 			owner = {
-					check_variable = { which = dimensional_fabricator_build_count value >= 1 }
-				}
+				check_variable = { which = dimensional_fabricator_build_count value >= 1 }
+			}
 		}
 	}
 
@@ -410,9 +410,9 @@ building_class_4_singularity = {
 		custom_tooltip = {
 			fail_text = ancrel.10004.failtext
 			owner = {
-					check_variable = { which = class_4_singularity_build_count value >= 1 }
-				}
+				check_variable = { which = class_4_singularity_build_count value >= 1 }
 			}
+		}
 	}
 
 	planet_modifier = {
@@ -469,9 +469,9 @@ building_nano_forge = {
 		custom_tooltip = {
 			fail_text = ancrel.10004.failtext
 			owner = {
-					check_variable = { which = nano_forge_build_count value >= 1 }
-				}
+				check_variable = { which = nano_forge_build_count value >= 1 }
 			}
+		}
 	}
 
 	planet_modifier = {
@@ -680,8 +680,8 @@ building_fe_dome = {
 		custom_tooltip = {
 			fail_text = ancrel.10004.failtext
 			owner = {
-					check_variable = { which = skydome_build_count value >= 1 }
-				}
+				check_variable = { which = skydome_build_count value >= 1 }
+			}
 		}
 	}
 
