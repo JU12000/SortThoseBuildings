@@ -5,7 +5,6 @@
 building_hydroponics_farm = {
 	base_buildtime = @b1_time
 	position_priority = 4032000
-
 	category = resource
 	potential = {
 		exists = owner
@@ -869,6 +868,7 @@ building_bio_reactor = {
 		exists = owner
 		owner = {
 			OR = {
+				is_catalytic_empire = yes
 				is_machine_empire = yes
 				is_mechanical_empire = yes
 				is_lithoid_empire = yes

@@ -109,7 +109,7 @@ building_stone_palace = {
 		exists = owner
 		owner = {
 			OR = {
-			is_primitive = no
+				is_primitive = no
 				is_hive_empire = yes
 			}
 		}
