@@ -177,8 +177,10 @@ building_research_lab_3 = {
 
 building_institute = {
 	base_buildtime = @b2_time
-	base_cap_amount = 1
-	position_priority = 2052000
+	empire_limit = {
+		base = 1
+	}
+	position_priority = 1052000
 
 	category = research
 
@@ -222,8 +224,12 @@ building_institute = {
 		}
 	}
 
+	country_modifier = {
+		country_scientist_cap_add = 1
+		all_technology_research_speed = 0.05
+	}
+
 	planet_modifier = {
-		planet_researchers_produces_mult = 0.15
 		job_head_researcher_add = 1
 	}
 
@@ -254,9 +260,11 @@ building_institute = {
 
 building_supercomputer = {
 	base_buildtime = @b2_time
-	base_cap_amount = 1
+	empire_limit = {
+		base = 1
+	}
 	icon = building_institute
-	position_priority = 2052000
+	position_priority = 1052000
 
 	category = research
 
@@ -292,19 +300,22 @@ building_supercomputer = {
 		category = planet_buildings
 		cost = {
 			minerals = @b2_minerals
+			exotic_gases = @b2_rare_cost
 		}
 		upkeep = {
 			energy = @b2_upkeep
+			exotic_gases = @b2_rare_upkeep
 		}
 	}
 
-	planet_modifier = {
-		planet_researchers_produces_mult = 0.15
+	country_modifier = {
+		country_scientist_cap_add = 1
+		all_technology_research_speed = 0.05
 	}
 
 	inline_script = {
 		script = jobs/researchers_add
-		AMOUNT = 1
+		AMOUNT = 2
 	}
 
 	prerequisites = {
@@ -420,7 +431,7 @@ building_archaeostudies_faculty = {
 building_vultaum_reality_computer = {
 	base_buildtime = @b2_time
 	base_cap_amount = 1
-	position_priority = 2051000
+	position_priority = 2052000
 
 	category = research
 
