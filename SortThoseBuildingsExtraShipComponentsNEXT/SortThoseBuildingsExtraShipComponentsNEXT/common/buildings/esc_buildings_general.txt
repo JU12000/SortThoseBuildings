@@ -968,7 +968,7 @@ esc_building_stellar_energy_tower = {
 
 esc_building_quantum_node = {
 	base_buildtime = 360
-	position_priority = 2051004
+	position_priority = 2052004
 	base_cap_amount = 1
 	icon = esc_building_quantum_node
 	category = research
