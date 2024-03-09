@@ -980,11 +980,23 @@ building_bio_reactor_2 = {
 			minerals = @b2_minerals
 		}
 		upkeep = {
-			food = 25
+			food = @b2_upkeep
 		}
 	}
 
+	inline_script = {
+		script = jobs/farmers_add
+		FARMER_AMOUNT = 2
+		ANGLER_AMOUNT = 2
+	}
+
+	planet_modifier = {
+		planet_farmers_food_produces_add = -3
+		planet_farmers_energy_produces_add = 2
+		planet_farmers_exotic_gases_produces_add = 0.1
+	}
+
 	prerequisites = {
-		"tech_bio_reactor"
+		tech_bio_reactor_2
 	}
 }
