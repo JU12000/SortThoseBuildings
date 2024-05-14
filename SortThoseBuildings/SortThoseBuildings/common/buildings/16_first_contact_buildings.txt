@@ -69,7 +69,7 @@ building_low_tech_admin_hub = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = yes
-	position_priority = 1084000
+	position_priority = 1085000
 
 	category = unity
 
@@ -174,7 +174,7 @@ building_low_tech_power_plant = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = yes
-	position_priority = 1031000
+	position_priority = 1033000
 
 	category = resource
 
@@ -222,7 +222,7 @@ building_low_tech_farm = {
 	can_build = no
 	can_demolish = yes
 	can_be_ruined = yes
-	position_priority = 1033000
+	position_priority = 1034000
 
 	category = resource
 

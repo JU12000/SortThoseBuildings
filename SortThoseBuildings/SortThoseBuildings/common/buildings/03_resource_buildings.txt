@@ -62,14 +62,13 @@ building_food_processing_facility = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = resource
-	position_priority = 2035000
+	position_priority = 2038000
 
 	potential = {
 		exists = owner
 		NOR = {
 			is_planet_class = pc_machine
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
 		}
 
 		OR = {
@@ -89,7 +88,6 @@ building_food_processing_facility = {
 			}
 			is_planet_class = pc_machine
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
 			AND = {
 				owner = {
 					is_ai = yes
@@ -157,7 +155,6 @@ building_food_processing_center = {
 			}
 			is_planet_class = pc_machine
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
 		}
 	}
 
@@ -221,14 +218,13 @@ building_baol_organic_plant = {
 	base_buildtime = @b2_time
 	base_cap_amount = 1
 	category = resource
-	position_priority = 2034000
+	position_priority = 2037000
 
 	potential = {
 		exists = owner
 		NOR = {
 			is_planet_class = pc_machine
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
 		}
 	}
 
@@ -241,7 +237,6 @@ building_baol_organic_plant = {
 			}
 			is_planet_class = pc_machine
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
 		}
 	}
 
@@ -310,7 +305,7 @@ building_baol_organic_plant = {
 }
 
 building_mineral_purification_plant = {
-	position_priority = 2033000
+	position_priority = 2036000
 
 	desc = {
 		trigger = { NOT = { is_planet_class = pc_shattered_ring_habitable } }
@@ -329,7 +324,6 @@ building_mineral_purification_plant = {
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
 			AND = {
 				exists = owner
 				owner = {
@@ -343,7 +337,6 @@ building_mineral_purification_plant = {
 	potential = {
 		NOR = {
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
 		}
 
 		NOR = { # Ringworlds don't have mines
@@ -444,14 +437,12 @@ building_mineral_purification_hub = {
 		has_upgraded_capital = yes
 		NOR = {
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
 		}
 	}
 
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
 			AND = {
 				exists = owner
 				owner = {
@@ -565,13 +556,12 @@ building_energy_grid = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = resource
-	position_priority = 2032000
+	position_priority = 2035000
 
 	destroy_trigger = {
 		OR = {
 			OR = {
 				has_modifier = resort_colony
-				has_modifier = crucible_colony
 			}
 			AND = {
 				exists = owner
@@ -586,7 +576,6 @@ building_energy_grid = {
 	potential = {
 		NOR = {
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
 		}
 		OR = {
 			NOT = { is_planet_class = pc_habitat }
@@ -673,7 +662,6 @@ building_energy_nexus = {
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
 			AND = {
 				exists = owner
 				owner = {
@@ -767,7 +755,6 @@ building_resource_silo = {
 		NOR = {
 			has_modifier = resort_colony
 			has_modifier = slave_colony
-			has_modifier = crucible_colony
 		}
 	}
 
@@ -870,7 +857,6 @@ building_bio_reactor = {
 		NOR = {
 			is_planet_class = pc_machine
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
 		}
 
 		OR = {
@@ -890,7 +876,6 @@ building_bio_reactor = {
 			}
 			is_planet_class = pc_machine
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
 			AND = {
 				owner = {
 					is_ai = yes
@@ -944,7 +929,6 @@ building_bio_reactor_2 = {
 		NOR = {
 			is_planet_class = pc_machine
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
 		}
 
 		OR = {
@@ -964,7 +948,6 @@ building_bio_reactor_2 = {
 			}
 			is_planet_class = pc_machine
 			has_modifier = resort_colony
-			has_modifier = crucible_colony
 			AND = {
 				owner = {
 					is_ai = yes

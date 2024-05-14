@@ -175,9 +175,9 @@ building_waste_reprocessing_center = {
 	base_cap_amount = 1
 	can_build = yes
 	can_demolish = yes
-	position_priority = 2031000
+	position_priority = 2034000
 
-	category = resources
+	category = resource
 
 	potential = {
 		owner = { has_country_flag = bought_waste_reprocessing_center }
