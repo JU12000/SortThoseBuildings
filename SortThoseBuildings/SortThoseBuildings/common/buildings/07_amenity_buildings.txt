@@ -171,9 +171,11 @@ building_communal_housing = {
 	potential = {
 		OR = {
 			NOT = { is_planet_class = pc_habitat }
-			exists = owner
-			owner = {
-				is_void_dweller_empire = yes
+			AND = {
+				exists = owner
+				owner = {
+					is_void_dweller_empire = yes
+				}
 			}
 		}
 		NOT = { has_modifier = slave_colony }
@@ -827,7 +829,7 @@ building_clinic = {
 	planet_modifier = {
 		job_healthcare_add = 2
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -842,7 +844,7 @@ building_clinic = {
 			auto_mod_monthly_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -984,7 +986,7 @@ building_hospital = {
 	planet_modifier = {
 		job_healthcare_add = @b2_jobs
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -999,7 +1001,7 @@ building_hospital = {
 			auto_mod_monthly_add = 2
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
