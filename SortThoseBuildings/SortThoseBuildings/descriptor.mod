@@ -5,4 +5,4 @@ tags={
 	"Buildings"
 }
 name="Sort Those Buildings"
-supported_version="3.13.0"
+supported_version="v3.13.0"
